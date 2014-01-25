@@ -12,8 +12,10 @@
 	<div class="fs11 red">Project size: <b>5.4 MB</b></div>
 	<div class="fs11 red">Max used ram: 26 MB</div>
 	<div class="h30 mt15">
-		<pre class="brush: plain">$ siege -b -r 100 http://127.0.0.1:3000/</pre>
+		<pre class="brush: plain">$ node app &amp;
+$ siege -b -r 100 http://127.0.0.1:3000/</pre>
 	</div>
+	<br />
 	<ul class="performance">
 		<li>1500 hits (170 bytes) - 6.23 secs</li>
 		<li>1500 hits (170 bytes) - 5.83 secs</li>
@@ -22,12 +24,14 @@
 		<li>1500 hits (170 bytes) - 5.77 secs</li>
 	</ul>
 	<br />
-	<h3 style="margin-top:15px">total.js v1.0.0</h3>
+	<h3 style="margin-top:15px">total.js v1.0.2</h3>
 	<div class="fs11 red">Project size: <b>311 kB</b></div>
 	<div class="fs11 red">Max used ram: 15 MB</div>
 	<div class="h30 mt15">
-		<pre class="brush: plain">$ siege -b -r 100 http://127.0.0.1:8000/</pre>
+		<pre class="brush: plain">$ node release &amp;
+$ siege -b -r 100 http://127.0.0.1:8000/</pre>
 	</div>
+	<br />
 	<ul class="performance">
 		<li>1500 hits (396 bytes) - 0.98 secs</li>
 		<li>1500 hits (396 bytes) - 0.85 secs</li>
