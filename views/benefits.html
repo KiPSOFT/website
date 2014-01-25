@@ -1,0 +1,161 @@
+@{meta('total.js benefits', 'This webpage quick describes an overview of total.js MVC Framework', 'benefits, total.js, website, eshop', 'social.jpg')}
+
+<h1 class="silver center">total.js benefits</h1>
+<p class="claim">What are the benefits of total.js? This is web application framework for node.js</p>
+
+<div class="content bg-test">
+	<h2>Performance - express.js vs total.js</h2>
+	<p class="text">
+		I tested performance between express.js and total.js. Both test are similar but total.js contains more informations. If you want to create a performance test, download both projects: <a href="/download/expressjs-vs-totaljs.zip" class="b link">expressjs-vs-totaljs (1.9 MB)</a>
+	</p>
+	<h3 style="margin-top:20px">express.js v3.0.6 + jade</h3>
+	<div class="fs11 red">Project size: <b>5.4 MB</b></div>
+	<div class="fs11 red">Max used ram: 26 MB</div>
+	<div class="h30 mt15">
+		<pre class="brush: plain">$ siege -b -r 100 http://127.0.0.1:3000/</pre>
+	</div>
+	<ul class="performance">
+		<li>1500 hits (170 bytes) - 6.23 secs</li>
+		<li>1500 hits (170 bytes) - 5.83 secs</li>
+		<li>1500 hits (170 bytes) - 5.71 secs</li>
+		<li>1500 hits (170 bytes) - 5.75 secs</li>
+		<li>1500 hits (170 bytes) - 5.77 secs</li>
+	</ul>
+	<br />
+	<h3 style="margin-top:15px">total.js v1.0.0</h3>
+	<div class="fs11 red">Project size: <b>311 kB</b></div>
+	<div class="fs11 red">Max used ram: 15 MB</div>
+	<div class="h30 mt15">
+		<pre class="brush: plain">$ siege -b -r 100 http://127.0.0.1:8000/</pre>
+	</div>
+	<ul class="performance">
+		<li>1500 hits (396 bytes) - 0.98 secs</li>
+		<li>1500 hits (396 bytes) - 0.85 secs</li>
+		<li>1500 hits (396 bytes) - 0.80 secs</li>
+		<li>1500 hits (396 bytes) - 0.81 secs</li>
+		<li>1500 hits (396 bytes) - 0.81 secs</li>
+	</ul>
+	<br />
+	<div class="fs11"><b>IMPORTANT:</b> total.js has much more functionality than express.js.</div>
+</div>
+<br />
+<br />
+<br />
+<div class="bg-white">
+	<br />
+	<br />
+	<br />
+	<div class="content">
+		<div class="center">
+			<div>@{image('1-request.png', 176, 352, 'Request')}</div>
+			<br />
+			<h2>total.js URL routing</h2>
+			<br />
+			<p class="fs11 gray">Framework supports perfect URL routing and compliances friendly url.<br />You can write own route to WebPage or WebSocket.</p>
+		</div>
+		<br />
+		<div class="center">@{image('2-controllers.png', 960, 550, 'Controllers')}</div>
+		<br />
+		<br />
+	</div>
+	<hr />
+	<div class="content">		
+		<br />
+		<div class="center">
+			<h2>Great view engine</h2>
+			<p class="fs11 gray">View engine contains many features and supports condition.<br />You can render view in view with model.</p>
+		</div>
+		<br />
+		<div class="center">@{image('2-viewengine.png', 950, 630, 'View engine')}</div>
+	</div>
+	<hr />
+	<div class="content">
+		<br />
+		<br />
+		<div class="center">
+			<h2>Automated LESS CSS</h2>
+			<p class="fs11 gray">Write LESS and do more. Framework supports simple LESS CSS and<br />automated CSS vendor prefixes.</p>
+		</div>
+		<br />
+		<div class="center">@{image('4-css.png', 725, 766, 'LESS CSS')}</div>
+	</div>
+	<br />	
+	<hr />
+	<div class="content">
+		<br />
+		<br />
+		<div class="center">
+			<h2>Automated compression</h2>
+			<p class="fs11 gray">Automatically compress HTML, JS and CSS one time and save to temporary cache.<br />Client receives a small data via GZIP compression.</p>
+		</div>
+		<br />
+		<div class="center">@{image('5-compress.png', 940, 400, 'Automated compress HTML, JS and CSS')}</div>
+		<br />
+	</div>
+	<hr />
+	<br />
+	<div class="content">
+		<br />
+		<div class="center mt10">@{image('pagespeed.png', 751, 73, 'Google Page Speed')}</div>
+		<br />
+		<br />
+	</div>
+</div>
+<div class="bg-black">
+	<div class="content">
+		<br />
+		<br />
+		<div class="center">
+			<h2 class="white h40" style="font-size:30px">No dependencies</h2>
+			<p class="fs11 gray">
+				Framework has no dependencies. Complete functionality is built in its core.<br />
+				It's written in 100% pure javascript.
+			</p>
+			<br />
+			<div class="center">@{image('9-differences.png', 649, 490, 'Differences')}</div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+	</div>
+</div>
+<div class="bg-white">
+	<div class="content">
+		<br />
+		<div class="center">@{image('10-install.png', 960, 352, 'total.js install vs express.js install')}</div>
+		<br />
+	</div>
+</div>
+<div class="content">
+	<br />
+	<br />
+	<div class="fl w190 center br">
+		<div>@{image('100-calendar.png', 100, 100, 'DateTime functions')}</div>
+		<div class="b mt10">Date and time<br />functions</div>
+	</div>
+	<div class="fl w190 center br">
+		<div>@{image('100-mobile.png', 100, 100, 'Mobile devices support')}</div>
+		<div class="b mt10">Mobile devices<br />support</div>
+	</div>
+	<div class="fl w190 center br">
+		<div>@{image('100-resources.png', 100, 100, 'Resources for multilanguage webpages')}</div>
+		<div class="b mt10">Resources for<br />multilanguage webpages</div>
+	</div>
+	<div class="fl w190 center br">
+		<div>@{image('100-nosql.png', 100, 100, 'NoSQL embedded database')}</div>
+		<div class="b mt10">NoSQL embedded<br />database</div>
+	</div>
+	<div class="fl w190 center">
+		<div>@{image('100-module.png', 100, 100, 'Supports custom modules')}</div>
+		<div class="b mt10">Supports custom<br />modules</div>
+	</div>
+	<div class="cl">&nbsp;</div>
+</div>
+<br />
+<br />
+<div class="center">
+	<iframe width="800" height="600" src="http://www.youtube.com/embed/lW1vsKMUaKg" frameborder="0" allowfullscreen></iframe>
+</div>
+<br />
+<br />

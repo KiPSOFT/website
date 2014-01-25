@@ -1,0 +1,3 @@
+name						: Configuration from URL
+version 					: v0.1
+author						: Peter Širka
