@@ -5,40 +5,10 @@
 
 <div class="content bg-test">
 	<h2>Performance - express.js vs total.js</h2>
-	<p class="text">
-		I tested performance between express.js and total.js. Both test are similar but total.js contains more informations. If you want to create a performance test, download both projects: <a href="/download/expressjs-vs-totaljs.zip" class="b link">expressjs-vs-totaljs (1.9 MB)</a>
-	</p>
-	<h3 style="margin-top:20px">express.js v3.0.6 + jade</h3>
-	<div class="fs11 red">Project size: <b>5.4 MB</b></div>
-	<div class="fs11 red">Max used ram: 26 MB</div>
-	<div class="h30 mt15">
-		<pre class="brush: plain">$ node app &amp;
-$ siege -b -r 100 http://127.0.0.1:3000/</pre>
+	<div class="text gray" style="line-height:16px">
+		Dear developers,<br />
+		<div style="margin-top:5px">Test between express.js and total.js was misleading because express.js was not tested in a release version. This way I would like to apologize to authors of express.js.<br />Test results: express.js is 1/2 as productive as total.js. I have to change it.</div>
 	</div>
-	<br />
-	<ul class="performance">
-		<li>1500 hits (170 bytes) - 6.23 secs</li>
-		<li>1500 hits (170 bytes) - 5.83 secs</li>
-		<li>1500 hits (170 bytes) - 5.71 secs</li>
-		<li>1500 hits (170 bytes) - 5.75 secs</li>
-		<li>1500 hits (170 bytes) - 5.77 secs</li>
-	</ul>
-	<br />
-	<h3 style="margin-top:15px">total.js v1.0.2</h3>
-	<div class="fs11 red">Project size: <b>311 kB</b></div>
-	<div class="fs11 red">Max used ram: 15 MB</div>
-	<div class="h30 mt15">
-		<pre class="brush: plain">$ node release &amp;
-$ siege -b -r 100 http://127.0.0.1:8000/</pre>
-	</div>
-	<br />
-	<ul class="performance">
-		<li>1500 hits (396 bytes) - 0.98 secs</li>
-		<li>1500 hits (396 bytes) - 0.85 secs</li>
-		<li>1500 hits (396 bytes) - 0.80 secs</li>
-		<li>1500 hits (396 bytes) - 0.81 secs</li>
-		<li>1500 hits (396 bytes) - 0.81 secs</li>
-	</ul>
 	<br />
 	<div class="fs11"><b>IMPORTANT:</b> total.js has much more functionality than express.js.</div>
 </div>
