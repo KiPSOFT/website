@@ -42,7 +42,7 @@ function view_stats() {
 }
 
 /*
-    Description: Online statistics
+    Description: Get current statistics
     Output: JSON
     Method: POST (XHR)
 */

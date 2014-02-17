@@ -85,7 +85,7 @@ function view_download() {
 */
 function view_usage() {
 	var self = this;
-	self.plain(self.framework.usage(true));
+	self.json(self.framework.usage(true), true);
 }
 
 /*
