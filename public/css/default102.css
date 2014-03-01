@@ -111,6 +111,10 @@ a.link { text-decoration: none; border-bottom: 1px dotted gray; color: #505050; 
 .links li { float: left; border-bottom: 1px dotted #D0D0D0; width: 135px; padding: 5px 0 5px 18px; margin: 0 8px 0 0; font-size: 14px; color: gray; background: url(../img/link.png) no-repeat 0 9px; }
 .links a { color: gray; }
 
+.links-large { padding: 0; margin: 0; list-style-type: none; }
+.links-large li { float: left; border-bottom: 1px dotted #D0D0D0; width: 219px; padding: 5px 0 5px 18px; margin: 0 8px 0 0; font-size: 14px; color: gray; background: url(../img/link.png) no-repeat 0 9px; }
+.links-large a { color: #176EA5; }
+
 .panel-platform { font-size: 11px; color:gray; border-bottom: 1px dotted #E0E0E0; padding: 4px 15px; background-color: #F0F0F0; border-radius: 4px; text-shadow:1px 1px 1px white; }
 .fl { float: left; }
 .br { border-right: 1px dashed silver; }
