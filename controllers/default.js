@@ -5,6 +5,8 @@ exports.install = function(framework) {
     framework.route('/benefits/', view_benefits);
     framework.route('/ide/', view_ide);
     framework.route('/webhosting/', view_webhosting);
+
+    framework.file('counter for .zip files', static_filecounter);
 };
 
 function view_homepage() {
@@ -35,4 +37,20 @@ function view_ide() {
 function view_webhosting() {
     var self = this;
     self.view('webhosting');
+}
+
+function static_filecounter(req, res, isValidation) {
+
+    if (isValidation)
+        return req.url.contains(['.zip', '/download/'], true);
+
+    var self = this;
+    var db = self.database('counter');
+
+    var index = req.url.lastIndexOf('/');
+    if (index === -1)
+        return self.return404(req, res);
+
+    db.insert({ name: req.url.substring(index + 1), ip: req.ip, date: new Date().format('yyyy-MM-dd HH:mm:ss') });
+    self.responseFile(req, res, self.path.public(req.url));
 }
