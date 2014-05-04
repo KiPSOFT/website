@@ -5,6 +5,7 @@ exports.install = function(framework) {
     framework.route('/benefits/', view_benefits);
     framework.route('/ide/', view_ide);
     framework.route('/webhosting/', view_webhosting);
+    framework.route('/usage/', plain_usage);
 
     framework.file('counter for .zip files', static_filecounter);
 };
@@ -37,6 +38,11 @@ function view_ide() {
 function view_webhosting() {
     var self = this;
     self.view('webhosting');
+}
+
+function plain_usage() {
+    var self = this;
+    self.plain(self.framework.usage(true));
 }
 
 function static_filecounter(req, res, isValidation) {
