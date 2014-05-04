@@ -1,7 +1,8 @@
 exports.install = function(framework) {
 
     framework.route('/stats/', view_stats);
-    framework.route('/stats/', xhr_stats, ['xhr', 'post']);
+    framework.route('/stats/', json_stats, ['xhr', 'post']);
+    framework.route('/stats/geoip/', ['xhr'], json_geoip);
 
     var module = framework.module('online');
 
@@ -46,7 +47,7 @@ function view_stats() {
     Output: JSON
     Method: POST (XHR)
 */
-function xhr_stats() {
+function json_stats() {
     var self = this;
     var module = self.module('online');
     var stats = module.today;
@@ -64,4 +65,23 @@ function xhr_stats() {
     self.framework.stats.response.json--;
 
     self.json(stats);
+}
+
+/**
+ * GEO IP
+ * @param  {String} ip [IP address]
+ */
+function json_geoip() {
+
+    var self = this;
+
+    utils.request('https://freegeoip.net/json/' + self.get.ip, 'GET', '', function(err, data) {
+
+        if (err) {
+            self.json({ r: false });
+            return;
+        }
+
+        self.json(JSON.parse(data));
+    });
 }
