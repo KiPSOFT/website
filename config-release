@@ -1,7 +1,5 @@
-default-ip               : 127.0.0.1
-default-port             : 8000
+name                       : total.js
+version                    : 2.01
+author                     : Peter Širka
 
-name                     : my web site
-version                  : 1.01
-secret                   : your-secret-key
-author                   : Your company name
+etag-version               : 20

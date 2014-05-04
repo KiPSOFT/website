@@ -1,7 +1,6 @@
 default-ip               : 10.0.1.4
 default-port             : 8001
 
-name                     : my web site
-version                  : 1.01
-secret                   : your-secret-key
-author                   : Your company name
+name                       : total.js
+version                    : 2.01
+author                     : Peter Širka
