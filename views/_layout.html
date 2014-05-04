@@ -1,50 +1,61 @@
-@{dns('//fonts.googleapis.com', '//ajax.googleapis.com', '//ghbtns.com', '//www.youtube.com', '//connect.facebook.net', '//apis.google.com')}
-
 <!DOCTYPE html>
 <html>
 <head>
-	@{meta}
+    @{meta}
     <meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=10" />
-	<meta name="format-detection" content="telephone=no"/>
-	<meta name="viewport" content="width=1024, user-scalable=yes" />
-	<meta name="robots" content="all,follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="all,follow" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css" />
     @{head}
-	@{css('default.css')}
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/sh/shCore.js"></script>
-    <script type="text/javascript" src="/sh/shBrushJScript.js"></script>
-    <script type="text/javascript" src="/sh/shBrushPlain.js"></script>
-    <script type="text/javascript" src="/sh/shBrushCss.js"></script>
-    <script type="text/javascript" src="/sh/shBrushXml.js"></script>
-	@{js('default.js')}
-	@{favicon('favicon.ico')}
+    @{css('default.css')}
+    @{css('icons.min.css')}
+    @{favicon('favicon.ico')}
 </head>
 <body>
-	<a href="https://github.com/petersirka/total.js" class="fork"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-	<div class="logo">
-		<div class="menu-container">
-			<ul class="menu">
-				<li><a href="/">Homepage</a></li>
-				<li><a href="/benefits/">Benefits</a></li>
-				<li><a href="/download/">Download</a></li>
-				<li><a href="https://groups.google.com/forum/#!forum/totaljs">Forum</a></li>
-				<li class="high"><a href="http://docs.totaljs.com">Documentation</a></li>
-				<li><a href="https://github.com/totaljs/examples" target="_blank">Examples</a></li>
-				<li><a href="/ide/">IDE</a></li>
-				<li><a href="/webhosting/">Webhosting</a></li>
-			</ul>
-		</div>		
-	</div>
-	<br />
-	@{body}
-	<br />
-	<div class="footer">
-		<a href="http://www.858project.com">@{image('signature858.png', 51, 46, '858project / web design & web development')}</a>
-		<div class="footer-about">&copy; 2014 by <a href="http://www.858project.com">858project.com</a></div>
-		<div>Made with <span class="love"></span> in European Union (SK).</div>
-	</div>
-	<div id="fb-root"></div>
-	
+    <a href="https://github.com/totaljs/framework" class="fork"><img src="/img/fork.png" width="149" height="149" alt="Fork me on GitHub" border="0" /></a>
+    <div class="menu-container">
+        <div class="content">
+            <a href="/" class="logo"><img src="/img/logo.png" width="126" height="40" alt="total.js - web application framework for node.js" border="0" /></a>
+            <ul class="menu">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/download/" class="b">Get started</a></li>
+                <li><a href="/totalstack/">TotalStack &trade;</a></li>
+                <li><a href="https://groups.google.com/forum/#!forum/totaljs">Forums</a></li>
+                <li><a href="http://docs.totaljs.com/" class="b">Documentation</a></li>
+                <li><a href="https://github.com/totaljs/examples/">+100 Examples</a></li>
+                <li><a href="/ide/">IDE</a></li>
+                <li><a href="/webhosting/">Webhosting</a></li>
+                <li><a href="https://github.com/totaljs/" class="b">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        @{body}
+        <div class="sign"></div>
+    </div>
+
+    <div class="container-footer">
+        <div class="content">
+            <ul>
+                <li><span class="fa fa-twitter"></span><a href="https://twitter.com/totalframework" target="_blank">Twitter</a></li>
+                <li><span class="fa fa-google-plus-square"></span><a href="https://plus.google.com/+partialjs" target="_blank">Google+</a></li>
+                <li><span class="fa fa-facebook-square"></span><a href="https://www.facebook.com/totaljs.web.framework" target="_blank">Facebook</a></li>
+                <li><span class="fa fa-github"></span><a href="https://github.com/totaljs/framework/" target="_blank">GitHub</a></li>
+                <li><span class="fa fa-gears"></span><a href="https://github.com/totaljs/modules" target="_blank">Modules</a></li>
+                <li><span class="fa fa-comment"></span><a href="https://groups.google.com/forum/#!forum/totaljs" target="_blank">Forums</a></li>
+                <li><span class="fa fa-lightbulb-o"></span><a href="https://github.com/totaljs/examples" target="_blank">Examples</a></li>
+                <li><span class="fa fa-check-square"></span><a href="http://docs.totaljs.com" target="_blank">Documentation</a></li>
+            </ul>
+            <br />
+            <div class="copyright">
+                &copy; 2012-2014. Made with <span class="fa fa-heart"></span> in <strong>European Union</strong>.
+                <div>Peter Širka</div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>

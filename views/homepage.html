@@ -1,168 +1,167 @@
-@{meta('total.js / web framework for node.js', 'Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS.', 'framework, total.js, node.js, web, application, MVC, partial.js', 'social.jpg')}
+@{meta('total.js - Web application framework for node.js', 'Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS.', 'framework, total.js, node.js, web, application, MVC, partial.js', 'social.jpg')}
 
-<!-- Where there ends partial.js, there begin total.js. -->
-
-<div class="content">
-	<h1>Web framework for node.js</h1>
-	<p class="claim">Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.</p>
-	<br />
-	<div class="panel">
-		<div class="center"><img src="@{routeImage('128-modern.png')}" width="128" height="128" alt="Modern framework" border="0" /></div>
-		<h2>Modern framework</h2>
-		<p>Friendly URL, XHR, JSON, LESS CSS (CSS 3), JavaScript minifier, XSS protected, resources, modules and supports MVC architecture.</p>
-	</div>
-	<div class="panel">
-		<div class="center"><img src="@{routeImage('128-websocket.png')}" width="128" height="128" alt="WebSocket supports" border="0" /></div>
-		<h2>WebSockets (RFC 6455)</h2>
-		<p>WebSocket is an advanced technology that makes interactive communication session between the user's browser and a server.</p>
-	</div>
-	<div class="panel">
-		<div class="center"><img src="@{routeImage('128-stop.png')}" width="128" height="128" alt="No dependencies" border="0" /></div>
-		<h2>No dependencies</h2>
-		<p>The framework has no dependencies. Complete functionality is built in its core. You can install any module by the Node Package Manager.</p>
-	</div>
-	<div class="panel nbr">
-		<div class="center"><img src="@{routeImage('128-freedom.png')}" width="128" height="128" alt="Gives You Freedom" border="0" /></div>
-		<h2>Gives you freedom</h2>
-		<p>Framework doesn&#39;t limit you. You can write whatever you want or rewrite existing functionality. It&#39;s easy, simple and safe.</p>
-	</div>
-	<div class="cl">&nbsp;</div>
-	<div class="box-container" id="totalstack">
-		<div class="box-tw">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.totaljs.com" data-text="Web application framework for node.js" data-via="totalframework" data-related="totaljs" data-hashtags="totaljs">Tweet</a>&nbsp;
-		</div>
-		<div class="box-go">
-			<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/113175077493180148081" data-rel="publisher"></div>&nbsp;
-		</div>
-		<div class="box-fb">
-			<div class="fb-like" data-href="https://www.facebook.com/totaljs.web.framework" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>&nbsp;
-		</div>
-		<div class="box-gi">
-			<iframe src="http://ghbtns.com/github-btn.html?user=totaljs&repo=framework&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>&nbsp;
-		</div>
-	</div>
-	<hr />
-	<br />
-	<br />
-	<div class="center">@{image('totalstack.png', 400, 163, 'TOTALSTACK - total.js + angular.js')}</div>
-	<br />
-	<br />
-	<p class="claim" style="font-size:14px;line-height:18px;margin-bottom:25px">Total.js supports great features for <strong>development Angular.js applications</strong>. I call this: <strong>TOTALSTACK</strong>.<br />Try to create Angular.js application with total.js web application framework for node.js from command-line tool:</p>
-	<div style="width:700px;margin:0 auto"><pre class="brush: plain"># --&gt; Install total.js
-$ sudo npm install -g total.js
-
-# --&gt; Create App directory
-$ mkdir angularapp
-
-# --&gt; Open App directory
-$ cd angularapp
-
-# --&gt; Create empty angular.js project
-$ total -angular
-
-# --&gt; Run App
-$ node debug</pre></div>
-	<br /><br />
-	<ul class="links-large">
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs">Angular.js simple example</a></li>
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs-websocket">Angular.js websocket example</a></li>
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs-routing">Angular.js routing example</a></li>
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs-mongodb-rest-resources">Angular.js REST + MongoDB</a></li>
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs-bootstrap">Angular.js with Bootstrap</a></li>
-		<li><a target="_blank" href="https://github.com/totaljs/examples/tree/master/angularjs-common">Angular.js without CDN</a></li>
-	</ul>
-	<div class="cl">&nbsp;</div>
-	<br />
+<div class="container-homepage">
+    <span class="fa fa-thumbs-up"></span>
+    <h1>Web application framework for node.js</h1>
+    <p class="claim">Free server framework for building Web sites and Web applications using JavaScript, HTML and CSS.</p>
 </div>
-@{content('download')}
-<div class="bg-black">
-	<br />
-	<div class="content">
-		<ul class="features" style="padding-top:40px">
-			<li>MIT license (free for commercial use)</li>
-			<li class="b"><a href="https://github.com/totaljs/examples/tree/master/server-sent-events" target="_blank" class="white">Supports Server Sent Events</a></li>
-			<li class="b"><a href="https://github.com/totaljs/examples/tree/master/websocket" target="_blank" class="white">Supports WebSockets</a></li>
-			<li class="b"><a href="https://github.com/totaljs/examples/tree/master/live-streaming" target="_blank" class="white">Supports live streaming (mixed)</a></li>
-			<li>Serve static files &amp; Supports streaming</li>
-			<li>Resources for multilingual pages</li>
-			<li>Supports prefixes for <strong>mobile devices</strong></li>
-			<li>Great view engine</li>
-			<li>MVC architecture</li>
-			<li>Fast file upload (multipart)</li>
-			<li>Form data validation</li>
-			<li class="b">Controller assertion testing</li>
-			<li><strong>REST</strong> (GET, POST, PUT, DELETE)</li>
-			<li>Custom authorization</li>
-			<li>LESS CSS + auto vendor prefixes</li>
-			<li>Supports JavaScript minifier</li>
-			<li>XSS protected, CSRF, CORS</li>
-			<li>2x enviroments - debug / release</li>
-			<li>Supports custom helpers</li>
-			<li><a href="https://github.com/totaljs/modules" target="_blank" class="white b">Supports modules</a></li>
-			<li>Reusable code between projects</li>
-			<li><a href="https://github.com/totaljs/examples/tree/master/email-templating" target="_blank" class="gray">SMTP sender (E-mail sender)</a></li>
-			<li>Supports NoSQL embedded database</li>
-			<li><a href="https://github.com/totaljs/examples/tree/master/image-resize" target="_blank" class="gray">Image processing via GraphicsMagick</a></li>
-			<li><a href="https://github.com/totaljs/examples/tree/master/workers" target="_blank" class="gray">Supports workers</a></li>
-			<li>Supports restrictions and redirects</li>
-			<li>Supports custom JS and CSS compiler</li>
-			<li><a href="https://github.com/totaljs/examples/tree/master/controller-proxy" target="_blank" class="gray">Supports proxy requests</a></li>
-			<li><a href="https://github.com/totaljs/examples/tree/master/authorization-www-basic" target="_blank" class="gray">Supports basic access authentication</a></li>
-			<li class="b"><a href="https://github.com/totaljs/examples" target="_blank" class="white">Many examples</a></li>
-			<li class="b">Fast &amp; Safe</li>
-			<li class="b"><a href="http://youtu.be/3GMQJki82Lo" target="_blank" class="white">Watch the video about total.js</a></li>
-		</ul>
-		<div class="cl">&nbsp;</div>
-	</div>
-	<br />
+
+<div class="container-black">
+    <div class="content">
+        <ul class="features">
+            <li>
+                <span class="fa fa-asterisk"></span>
+                <h2>Modern framework</h2>
+                <p>Friendly URL, XHR, JSON, LESS CSS (CSS 3), JavaScript minifier, XSS protected, resources, modules and supports MVC architecture.</p>
+            </li>
+            <li>
+                <span class="fa fa-gear fa-spin"></span>
+                <h2>Modular framework</h2>
+                <p><a href="https://github.com/totaljs/modules" target="_blank">Download exist modules from the GitHub</a> or create own. You can install any node.js module from the <a href="http://www.npmjs.org" target="_blank">Node Package Manager</a>.</p>
+            </li>
+            <li>
+                <span class="fa fa-shield"></span>
+                <h2>Perfect security</h2>
+                <p>Framework supports a <a href="http://docs.totaljs.com/how-does-it-work/security/" target="_blank">good security elements</a>. Automatically encodes received data and checks incoming requests.</p>
+            </li>
+            <li>
+                <span class="fa fa-plus-square"></span>
+                <h2>Extensible framework</h2>
+                <p>You can extend framework by yourself. You can rewrite existing functionality and replace it according to your needs.</p>
+            </li>
+            <li>
+                <span class="fa fa-code"></span>
+                <h2>Beautiful templating</h2>
+                <p>Framework has unique templating engine. It&#39;s beautiful, simple and powerful. Templates is a strong weapon for the web development.</p>
+            </li>
+            <li>
+                <span class="fa fa-random"></span>
+                <h2>RESTful routing</h2>
+                <p>Define a different actions to one url and distribute by e.g. HTTP methods. Framework has the best routing engine as you know.</p>
+            </li>
+            <li>
+                <span class="fa fa-refresh fa-spin"></span>
+                <h2>Create real-time applications</h2>
+                <p>Framework supports WebSocket (RFC 6455) and Server-Sent events. You can create real-time applications or multiplayer games.</p>
+            </li>
+            <li>
+                <span class="fa fa-compress"></span>
+                <h2>Automation</h2>
+                <p>Framework automatically compress JavaScript, HTML and compiles CSS. You don&#39;t need other tools (e.g. Grunt).</p>
+            </li>
+            <li>
+                <span class="fa fa-thumbs-up"></span>
+                <h2>Easy to use</h2>
+                <p>Framework has an easy learning curve. You will learn to create web applications for a very short time.</p>
+            </li>
+            <li>
+                <span class="fa fa-cloud"></span>
+                <h2>Run everywhere</h2>
+                <p>Install once and run anywhere - Unix, Linux, Mac OS X, Windows or SunOS. You don't need other applications for your website.</p>
+            </li>
+            <li>
+                <span class="fa fa-building-o"></span>
+                <h2>Ready to enterprise</h2>
+                <p>Framework has good architecture for big applications and on one project can work more developers.</p>
+            </li>
+            <li>
+                <span class="fa fa-file"></span>
+                <h2>Friendly license</h2>
+                <p>Framework is licensed under the MIT license which makes it perfect for use in commercial applications.</p>
+            </li>
+        </ul>
+        <div class="cl"></div>
+    </div>
 </div>
-<div class="bg-white">
-	<br />
-	<br />
-	<div class="content">
-		<h2>Total.js is awesome solution for ...</h2>
-		<div class="clientside">
-			<a href="http://angularjs.org" title="Easy use with AngularJS" target="_blank">@{image('angularjs.png', 100, 30, 'AngularJS')}</a>
-			<a href="http://jquery.com" title="Easy use with jQuery" target="_blank">@{image('jquery.png', 100, 30, 'jQuery')}</a>
-			<a href="http://backbonejs.org" title="Easy use with BackboneJS" target="_blank">@{image('backbone.png', 100, 30, 'BackboneJS')}</a>
-			<a href="http://knockoutjs.com" title="Easy use with KnockoutJS" target="_blank">@{image('knockout.png', 100, 30, 'KnockoutJS')}</a>
-			<a href="http://emberjs.com" title="Easy use with EmberJS" target="_blank">@{image('ember.png', 100, 30, 'EmberJS')}</a>
-			<a href="http://dojotoolkit.org" title="Easy use with Dojo" target="_blank">@{image('dojo.png', 100, 30, 'Dojo')}</a>
-			<a href="http://yuilibrary.com" title="Easy use with YUI Library" target="_blank">@{image('yui.png', 100, 30, 'YUI Library')}</a>
-		</div>
-		<ul class="features">
-			<li>total.js framework for <strong>website</strong></li>
-			<li>total.js framework for <strong>eshop</strong></li>
-			<li>total.js framework for <strong>blog</strong></li>
-			<li>total.js framework for <strong>forum</strong></li>
-			<li>total.js framework for <strong>company</strong></li>
-			<li>total.js framework for <strong>game</strong></li>
-			<li>total.js framework for <strong>chat</strong></li>
-			<li>total.js framework for <strong>web service</strong></li>
-		</ul>
-		<div class="cl">&nbsp;</div>
-		<br />
-	</div>
+<div class="container-smoke">
+    <div class="content">
+        <h2 class="big gray"><strong>Fully compatible</strong> with all client-side frameworks</h2>
+        <br />
+        <ul class="listview">
+            <li>
+                <a target="_blank" href="https://angularjs.org/"><img src="/img/logo-angularjs.png" width="100" height="30" border="0" alt="Angular.js" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://jquery.com/"><img src="/img/logo-jquery.png" width="100" height="30" border="0" alt="jQuery" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://backbonejs.org/"><img src="/img/logo-backbone.png" width="100" height="30" border="0" alt="Backbone.js" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://dojotoolkit.org/"><img src="/img/logo-dojo.png" width="100" height="30" border="0" alt="DOJO" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://mootools.net/"><img src="/img/logo-mootools.png" width="100" height="30" border="0" alt="Mootools" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://emberjs.com/"><img src="/img/logo-ember.png" width="100" height="30" border="0" alt="Ember.js" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://knockoutjs.com/"><img src="/img/logo-knockout.png" width="100" height="30" border="0" alt="Knockout.js" /></a>
+            </li>
+            <li>
+                <a target="_blank" href="http://yuilibrary.com/"><img src="/img/logo-yui.png" width="100" height="30" border="0" alt="YUI Library" /></a>
+            </li>
+        </ul>
+    </div>
 </div>
-<div class="content">
-	<br />
-	<br />
-	<h2>Other node.js web frameworks</h2>
-	<br />
-	<ul class="links">
-		<li><a target="_blank" href="http://www.expressjs.com">express.js</a></li>
-		<li><a target="_blank" href="http://www.koajs.com">koa.js</a></li>
-		<li><a target="_blank" href="http://locomotivejs.org">Locomotive</a></li>
-		<li><a target="_blank" href="http://towerjs.org">Tower.js</a></li>
-		<li><a target="_blank" href="http://flatironjs.org">flatiron</a></li>
-		<li><a target="_blank" href="http://compoundjs.com">compoundJS</a></li>
-		<li><a target="_blank" href="http://geddyjs.org">geddy</a></li>
-		<li><a target="_blank" href="http://sailsjs.org">Sails.js</a></li>
-		<li><a target="_blank" href="http://spumko.github.io">hapi</a></li>
-		<li><a target="_blank" href="http://derbyjs.com">Derby</a></li>
-		<li><a target="_blank" href="https://www.meteor.com">Meteor</a></li>
-		<li><a target="_blank" href="http://nombo.io">Nombo</a></li>
-		<li><a target="_blank" href="http://krakenjs.com">Kraken.js</a></li>
-	</ul>
-	<div class="cl">&nbsp;</div>
+
+<div>
+    <br />
+    <div class="content">
+        <h3 class="medium silver"><span class="fa fa-lightbulb-o mr5"></span> Additional framework features</h3>
+        <ul class="table">
+            <li><span class="fa fa-check-square green"></span> MVC architecture + Object-oriented</li>
+            <li class="b"><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/generators" target="_blank">JavaScript generators</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports static files + <a href="https://github.com/totaljs/examples/tree/master/video-streaming" target="_blank">streaming</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/localization-resources" target="_blank">Resources for multilingual pages</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/mobile" target="_blank">prefixes for mobile devices</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/upload-multipart" target="_blank">Fast file uploading</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/email-send" target="_blank">SMTP server (sending e-mails)</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/workers" target="_blank">Workers</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/petersirka/nosql" target="_blank">NoSQL embedded database</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/image-resize" target="_blank">Image processing</a> via <a href="http://www.graphicsmagick.org/" target="_blank" title="GraphicsMagick">GM</a>/<a href="http://www.imagemagick.org/" title="ImageMagick" target="_blank">IM</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/views-custom-helper" target="_blank">custom view helpers</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/framework-restrictions" target="_blank">restrictions</a> and <a href="https://github.com/totaljs/examples/tree/master/redirect-host" target="_blank">redirections</a></li>
+            <li><span class="fa fa-check-square green"></span> Supports <a href="https://github.com/totaljs/examples/tree/master/components" target="_blank">custom components</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/authorization" target="_blank">Custom authorization</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/assertion-testing" target="_blank">Assertion testing</a></li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/css-auto-vendor-prefixes" target="_blank">Auto vendor prefixes</a> + <a href="https://github.com/totaljs/examples/tree/master/css-less" target="_blank">LESS</a></li>
+            <li><span class="fa fa-check-square green"></span> 2x enviroments (debug /release)</li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/validation" target="_blank">Form validation</a></li>
+            <li><span class="fa fa-check-square green"></span> Reusable code between projects</li>
+            <li><span class="fa fa-check-square green"></span> <a href="https://github.com/totaljs/examples/tree/master/websocket" target="_blank">WebSockets</a> + <a href="https://github.com/totaljs/examples/tree/master/server-sent-events" target="_blank">Server-Sent events</a></li>
+        </ul>
+        <br />
+        <h3 class="medium silver"><span class="fa fa-info-circle mr5"></span> Other node.js web frameworks</h3>
+        <ul class="table">
+            <li><span class="fa fa-globe blue"></span> <a href="http://expressjs.com/" target="_blank">express.js</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://krakenjs.com/" target="_blank">Kraken.js</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://koajs.com/" target="_blank">koa.js</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://locomotivejs.org/" target="_blank">Locomotive</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://towerjs.org/" target="_blank">Tower.js</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://flatironjs.org/" target="_blank">flatiron</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://compoundjs.com/" target="_blank">compoundJS</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://geddyjs.org/" target="_blank">geddy</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://sailsjs.org/" target="_blank">Sails.js</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://spumko.github.io/" target="_blank">hapi</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://derbyjs.com/" target="_blank">Derby</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="https://www.meteor.com/" target="_blank">Meteor</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://nombo.io/" target="_blank">Nombo</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://rhapsodyjs.github.io/" target="_blank">RhapsodyJS</a></li>
+            <li><span class="fa fa-globe blue"></span> <a href="http://sleekjs.com/" target="_blank">Sleek.js</a></li>
+            <li><span class="fa fa-flask red"></span> <a href="http://www.wakanda.org/" target="_blank">Wakanda</a></li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <div class="alert auto center" style="width:75%"><b>IMPORTANT:</b> framework is highly addictive <span class="fa fa-smile-o"></span>. Please support <a href="https://github.com/totaljs/framework" target="_blank">total.js on GitHub</a>.</div>
+        <br />
+        <br />
+        <div class="button-large"><a href="/download/">GET STARTED</a></div>
+    </div>
+    <br />
+    <br />
+    <br />
 </div>
+<br />
