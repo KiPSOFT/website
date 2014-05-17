@@ -119,6 +119,7 @@ pre { padding: 10px; background-color: #F0F0F0; border: 1px solid #E0E0E0; borde
 
 @media all and (max-width: 1250px) {
     @-ms-viewport {width: device-width;}
+    body { padding: 0; }
     .content { width: 960px; }
     .panel { width: 220px; }
     .features { text-align: center; }
@@ -131,6 +132,11 @@ pre { padding: 10px; background-color: #F0F0F0; border: 1px solid #E0E0E0; borde
     .listview li { width: 160px; margin-bottom: 40px; }
     .table li { width: 47%; }
     .container-smoke { padding-bottom: 0; }
+    .menu-container { height: auto; position: inherit; padding: 10px 0 25px 0; }
+    .logo { float: none; display: block; margin: 10px auto; width: 130px; text-align: center; }
+    .menu { float: none; display: block; width: 100%; margin: 20px auto 0 auto; height: auto; padding: 0; text-align: center; }
+    .menu li { float: none; position: relative; display: inline-block; }
+    .fork { top: 123px; }
 }
 
 @media all and (max-width: 980px) {
@@ -150,7 +156,7 @@ pre { padding: 10px; background-color: #F0F0F0; border: 1px solid #E0E0E0; borde
     .menu-container { height: auto; position: inherit; padding: 10px 0 25px 0; }
     .logo { float: none; display: block; margin: 10px auto; width: 130px; text-align: center; }
     .menu { float: none; display: block; width: 100%; margin: 20px auto 0 auto; height: auto; padding: 0; text-align: center; }
-    .menu li { float: none; position: relative; display: inline-block; }
+    .menu li { float: none; position: relative; display: inline-block; padding-left: 5px; margin-right: 5px; }
     .fork { top: 123px; }
 }
 
