@@ -1,4 +1,5 @@
 exports.install = function(framework) {
+
     framework.route('/', view_homepage);
     framework.route('/download/', view_download);
     framework.route('/totalstack/', view_totalstack);
@@ -6,6 +7,8 @@ exports.install = function(framework) {
     framework.route('/ide/', view_ide);
     framework.route('/webhosting/', view_webhosting);
     framework.route('/usage/', plain_usage);
+    framework.route('/community/', view_community);
+    framework.route('/news/', view_news);
 
     framework.file('counter for .zip files', static_filecounter);
 };
@@ -38,6 +41,16 @@ function view_ide() {
 function view_webhosting() {
     var self = this;
     self.view('webhosting');
+}
+
+function view_community() {
+    var self = this;
+    self.view('community');
+}
+
+function view_news() {
+    var self = this;
+    self.view('news');
 }
 
 function plain_usage() {

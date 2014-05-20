@@ -33,10 +33,14 @@ body { padding:60px 0 0 0; margin:0; font:normal 12px Arial; background-color: b
 .features { list-style-type: none; margin: 0; padding: 0; color: white; }
 .features li { width: 270px; padding: 15px; float: left; height: 170px; }
 .features p { font-family: georgia; font-size: 13px; font-style: italic; color: gray; }
-.features h2 { color: white; font-family: 'Roboto Condensed'; font-size: 16px; font-weight: 300; }
+.features h2 { color: black; font-family: 'Roboto Condensed'; font-size: 16px; font-weight: 700; }
 .features a { text-decoration: none; color: silver; }
 .features a:hover { text-decoration: underline; }
-.features .fa { font-size: 45px; color: #8AC741; text-shadow: 1px 1px 3px black; }
+.features .fa { font-size: 45px; color: silver; text-shadow: 1px 1px 3px #F0F0F0; }
+
+.container-black .features h2 { color: white; }
+.container-black .features .fa { font-size: 45px; color: #8AC741; text-shadow: 1px 1px 3px black; }
+.container-black .features h2 { font-weight: 300; }
 
 .cl { clear: both; }
 .b { font-weight: 700 !important; }
@@ -53,6 +57,7 @@ body { padding:60px 0 0 0; margin:0; font:normal 12px Arial; background-color: b
 .container-subpage .fa { font-size: 170px; display: block; color: #F0FFDE; margin-bottom: 30px; text-shadow: 1px 1px 20px #75944D; }
 .container-subpage-red { background-color: #B01C15 !important; }
 .container-subpage-blue { background-color: #3A8BB6 !important; }
+.container-subpage-black { background-color: #151515 !important; }
 
 .button-large { width: 320px; border: solid 1px #6E9D36; background-color: #90CE47; background: linear-gradient(top,  #90CE47, #6F9E36); border-radius: 4px; box-shadow: 0 2px 20px silver; margin: 0 auto; }
 .button-large a { display: block; text-decoration: none; font: normal 400 24px 'Roboto Condensed'; color: white; text-align: center; padding: 20px 0; text-shadow: 1px 1px 1px #58703A; background-image: url(../img/button-light.png); background-repeat: no-repeat; background-position: -100px 0; animation: button 0.7s linear 10s; }
@@ -156,7 +161,7 @@ pre { padding: 10px; background-color: #F0F0F0; border: 1px solid #E0E0E0; borde
     .menu-container { height: auto; position: inherit; padding: 10px 0 25px 0; }
     .logo { float: none; display: block; margin: 10px auto; width: 130px; text-align: center; }
     .menu { float: none; display: block; width: 100%; margin: 20px auto 0 auto; height: auto; padding: 0; text-align: center; }
-    .menu li { float: none; position: relative; display: inline-block; padding-left: 5px; margin-right: 5px; }
+    .menu li { float: none; position: relative; display: inline-block; padding-left: 5px; margin-right: 5px; border: 0; }
     .fork { top: 123px; }
 }
 
