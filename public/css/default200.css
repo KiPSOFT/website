@@ -123,6 +123,8 @@ body { padding:60px 0 0 0; margin:0; font:normal 12px Arial; background-color: b
 .media p { margin: 0 0 20px 0; padding: 20px 15px; border: 0; border-right: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; color: gray; font-size: 16px; line-height: 20px; font-family: 'Roboto Condensed'; font-weight: 300; width: 90%; background-color: #F0F0F0; border-radius: 4px; text-align: center; margin: 0 auto; }
 .media h2 { color: black; font-family: 'Roboto Condensed'; font-size: 24px; font-weight: 700; text-align: center; }
 .media-image { margin: 30px 0; text-align: center; }
+.media p a { color: #0077BE; text-decoration: none; }
+.media p a:hover { text-decoration: underline; }
 
 hr { border: 0; border-top: 2px dashed #D0D0D0; margin: 20px 0; padding: 0; background: none; }
 pre { padding: 10px; background-color: #F0F0F0; border: 1px solid #E0E0E0; border-radius: 4px; margin: 0; }
