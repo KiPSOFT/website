@@ -55,7 +55,7 @@ function view_news() {
 
 function plain_usage() {
     var self = this;
-    self.plain(self.framework.usage(true));
+    self.plain(framework.usage(true));
 }
 
 function static_filecounter(req, res, isValidation) {

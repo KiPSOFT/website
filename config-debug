@@ -1,6 +1,0 @@
-default-ip               : 127.0.0.1
-default-port             : 8001
-
-name                       : total.js
-version                    : 2.01
-author                     : Peter Širka
