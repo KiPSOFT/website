@@ -1,6 +1,9 @@
-console.log('INJECTED: http://www.partialjs.com/inject-controller.js');
+// IMPORTANT:
+exports.name = 'MyController';
 
-exports.install = function(framework) {	
+console.log('INJECTED: http://www.totaljs.com/inject-controller.js (name: MyController)');
+
+exports.install = function(framework) {
 	framework.route('/', view_index);
 };
 

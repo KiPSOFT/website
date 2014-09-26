@@ -1,4 +1,7 @@
-console.log('INJECTED: http://www.partialjs.com/inject-module.js');
+// IMPORTANT:
+exports.name = 'Test';
+
+console.log('INJECTED: http://www.totaljs.com/inject-module.js (name: Test)');
 
 exports.hello = function() {
 	return 'Hello world!';
@@ -7,5 +10,5 @@ exports.hello = function() {
 framework.on('request-begin', function() {
 
 	console.log('Module from URL address.');
-	
+
 });
