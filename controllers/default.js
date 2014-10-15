@@ -1,57 +1,18 @@
 exports.install = function(framework) {
 
-    framework.route('/', view_homepage);
-    framework.route('/download/', view_download);
-    framework.route('/totalstack/', view_totalstack);
-    framework.route('/benefits/', view_benefits);
-    framework.route('/ide/', view_ide);
-    framework.route('/webhosting/', view_webhosting);
+    framework.route('/');
+    framework.route('/download/');
+    framework.route('/totalstack/');
+    framework.route('/benefits/');
+    framework.route('/ide/');
+    framework.route('/webhosting/');
+    framework.route('/database/');
+    framework.route('/community/');
+    framework.route('/news/');
     framework.route('/usage/', plain_usage);
-    framework.route('/community/', view_community);
-    framework.route('/news/', view_news);
 
     framework.file('counter for .zip files', static_filecounter);
 };
-
-function view_homepage() {
-    var self = this;
-    self.view('homepage');
-}
-
-function view_download() {
-    var self = this;
-    self.view('download');
-}
-
-function view_totalstack() {
-    var self = this;
-    self.view('totalstack');
-}
-
-function view_benefits() {
-    var self = this;
-    self.redirect('/');
-}
-
-function view_ide() {
-    var self = this;
-    self.view('ide');
-}
-
-function view_webhosting() {
-    var self = this;
-    self.view('webhosting');
-}
-
-function view_community() {
-    var self = this;
-    self.view('community');
-}
-
-function view_news() {
-    var self = this;
-    self.view('news');
-}
 
 function plain_usage() {
     var self = this;
