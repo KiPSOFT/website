@@ -15,10 +15,6 @@
         <br />
         <br />
         <ul class="table">
-            <li><span class="fa fa-chevron-circle-right blue"></span> <a href="http://docs.totaljs.com/tutorial/" target="_blank">Simple tutorial</a></li>
-            <li><span class="fa fa-chevron-circle-right blue"></span> <a href="https://github.com/totaljs/examples" target="_blank">+100 examples</a></li>
-            <li><span class="fa fa-chevron-circle-right blue"></span> <a href="http://sushi.totaljs.com/" target="_blank">Example: Sushi eshop</a></li>
-            <li><span class="fa fa-chevron-circle-right blue"></span> <a href="http://todo.totaljs.com/" target="_blank">Example: TODO list</a></li>
             <li><span class="fa fa-chevron-circle-right red"></span> <a href="https://github.com/totaljs/examples/tree/master/heroku" target="_blank">Example: Deploy web on Heroku</a></li>
             <li><span class="fa fa-chevron-circle-right red"></span> <a href="https://www.youtube.com/watch?v=kZvCCyR6iBI" target="_blank">Video: Deploy web on AppFog</a></li>
             <li class="b"><span class="fa fa-chevron-circle-right red"></span> <a href="https://github.com/totaljs/website" target="_blank">Download this webpage</a></li>
@@ -43,17 +39,36 @@
                 <br />
                 <div class="blue"><span class="fa fa-flag mr10 blue"></span> <b>$ npm install total.js</b></div>
             </li>
+            <li>
+                <h2 class="medium gray">02.3 Run it without any installation</h2>
+                <p>You can run framework without any installation. Create e.g. <span class="code">index.js</span> in project directory and run it through terminal / command-line <span class="code">node index.js</span></p>
+                <br />
+<pre><span class="gray">// Execute in node.js</span>
+<span class="gray">// Framework automatically reads directory structure</span>
+var http = require(&#039;http&#039;);
+
+<span class="gray">// This is total.js - web application framework for node.js</span>
+http.get(&#039;http://modules.totaljs.com/total.js/v1.7.0/total.js&#039;, function(res) {
+    var buffer = [];
+    res.on(&#039;data&#039;, function(buf) { buffer.push(buf.toString(&#039;utf8&#039;)); });
+    res.on(&#039;end&#039;, function() { eval(buffer.join(&#039;&#039;)); if (typeof(init) !== 'undefined') init(); });
+});
+
+<span class="gray">// Initialize function</span>
+<span class="gray">// Optional</span>
+function init() {
+
+    framework.route(&#039;/&#039;, function() {
+        this.plain(&#039;Hello world!&#039;);
+    });
+
+    <span class="gray">// debug | release | test</span>
+    framework.http(&#039;debug&#039;);
+}
+</pre>
+            </li>
         </ul>
         <br />
-        <br />
-        <br />
-        <div class="center">
-            <span class="fa fa-github" style="font-size:80px"></span>
-            <br />
-            <br />
-            <br />
-            <div style="margin-left:30px"><iframe src="http://ghbtns.com/github-btn.html?user=totaljs&repo=framework&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></div>
-        </div>
         <br />
         <br />
         <div class="button-large"><a href="https://github.com/totaljs/framework/releases">DOWNLOAD NOW</a></div>

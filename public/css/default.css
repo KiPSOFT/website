@@ -14,6 +14,8 @@ body { padding:60px 0 0 0; margin:0; font:normal 12px Arial; background-color: b
 .logo { float: left; margin: 4px 0 0 0; }
 .content { width: 1200px; margin: 0 auto; }
 
+.code { font: normal normal 14px 'Courier New'; background-color: #F0F0F0; padding: 2px 6px; border: 1px solid #E0E0E0; border-radius: 4px; }
+
 .container { background-color: white; }
 .container-black { background-color: #202020; padding: 30px 0; }
 .container-green { background-color: #8AB15C; padding: 30px 0; }
@@ -109,6 +111,7 @@ body { padding:60px 0 0 0; margin:0; font:normal 12px Arial; background-color: b
 
 .mr5 { margin-right: 5px; }
 .mr10 { margin-right: 10px; }
+.mb5 { margin-bottom: 5px; }
 
 .alert { padding: 15px 20px; min-height: 16px; border-radius:4px; font-size: 14px; line-height: 20px; background-color: #fcf8e3; border: 1px solid #FBE5B8; color:#c09853; }
 .alert a { color: #9f793c; }
