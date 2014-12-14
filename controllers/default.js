@@ -1,5 +1,4 @@
 exports.install = function(framework) {
-
     framework.route('/');
     framework.route('/download/');
     framework.route('/totalstack/');
@@ -7,10 +6,10 @@ exports.install = function(framework) {
     framework.route('/ide/');
     framework.route('/webhosting/');
     framework.route('/database/');
+    framework.route('/explore/');
     framework.route('/community/');
     framework.route('/news/');
     framework.route('/usage/', plain_usage);
-
     framework.file('counter for .zip files', static_filecounter);
 };
 

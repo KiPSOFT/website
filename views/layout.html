@@ -8,60 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="robots" content="all,follow" />
     <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     @{head}
-    @{css('merge.css')}
+    @{css('bootstrap.min.css', 'default.css', 'font-awesome.min.css')}
     @{favicon('favicon.ico')}
 </head>
 <body>
-    <a href="https://github.com/totaljs/framework" class="fork"><img src="/img/fork.png" width="149" height="149" alt="Fork me on GitHub" border="0" /></a>
-    <div class="menu-container">
-        <div class="content">
-            <a href="/" class="logo"><img src="/img/logo.png" width="126" height="40" alt="total.js - web application framework for node.js" border="0" /></a>
+
+    <div class="header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/img/logo.png" /></a>
             <ul class="menu">
-                <li><a href="/">Homepage</a></li>
-                <li><a href="/download/" class="b">Get started</a></li>
-                <li><a href="/totalstack/">TotalStack</a></li>
-                <li><a href="/community/">Community</a></li>
-                <li><a href="http://docs.totaljs.com/" class="b">Documentation</a></li>
-                <li><a href="https://github.com/totaljs/examples/">+100 Examples</a></li>
-                <li><a href="/database/">Databases</a></li>
-                <li><a href="/ide/">IDE</a></li>
-                <li><a href="/webhosting/">Webhosting</a></li>
-                <!--
-                <li><a href="https://github.com/totaljs/" class="b">GitHub</a></li>
-                -->
+                <li><a href="/">@(Homepage)</a></li>
+                <li><a href="/explore/">@(Explore)</a></li>
+                <li><a href="/getting-started/">@(Getting started)</a></li>
+                <li><a href="/community/">@(Community)</a></li>
+                <li><a href="http://docs.totaljs.com">@(Documentation)</a></li>
+                <li><a href="/ide/">@(IDE)</a></li>
+                <li><a href="/databases/">@(Databases)</a></li>
+                <li><a href="/webhosting/">@(Webhosting)</a></li>
             </ul>
         </div>
     </div>
-    <div class="container">
-        @{body}
-        <div class="sign"></div>
-    </div>
-
-    <div class="container-footer">
-        <div class="content">
-            <ul>
-                <li><span class="fa fa-twitter"></span><a href="https://twitter.com/totalframework" target="_blank">Twitter</a></li>
-                <li><span class="fa fa-google-plus-square"></span><a href="https://plus.google.com/+partialjs" target="_blank">Google+</a></li>
-                <li><span class="fa fa-facebook-square"></span><a href="https://www.facebook.com/totaljs.web.framework" target="_blank">Facebook</a></li>
-                <li><span class="fa fa-github"></span><a href="https://github.com/totaljs/framework/" target="_blank">GitHub</a></li>
-                <li><span class="fa fa-linkedin-square"></span><a href="https://www.linkedin.com/groups/totaljs-8109884" target="_blank">LinkedIn</a></li>
-                <li><span class="fa fa-gears"></span><a href="https://github.com/totaljs/modules" target="_blank">Modules</a></li>
-                <li><span class="fa fa-comment"></span><a href="https://groups.google.com/forum/#!forum/totaljs" target="_blank">Forums</a></li>
-                <li><span class="fa fa-lightbulb-o"></span><a href="https://github.com/totaljs/examples" target="_blank">Examples</a></li>
-                <li><span class="fa fa-check-square"></span><a href="http://docs.totaljs.com" target="_blank">Documentation</a></li>
-            </ul>
+    <div class="header-fill"></div>
+    @{body}
+    <div class="container footer">
+        <div class="center">
+            <div><a href="http://www.petersirka.eu"><img src="/img/petersirka.png" width="40" height="40" alt="Peter Širka - Maestro" /></a></div>
             <br />
-            <div class="copyright">
-                &copy; 2012-2014. Made with <span class="fa fa-heart"></span> in <strong>European Union</strong>.
-                <div>Peter Širka</div>
-                <br />
-                <br />
-                <a href="http://opensource.org" target="_blank"><img src="/img/opensource.png" width="70" height="60" alt="Proud to be Open Source" border="0" /></a>
-            </div>
+            <div>Code licensed under <a href="https://github.com/totaljs/framework/blob/master/license.txt">MIT</a>.
+            <ul>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework">GitHub</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/examples">+100 Examples</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="http://docs.totaljs.com">Documentation</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/issues">Issues</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/releases">Releases</a></li>
+            </ul>
         </div>
     </div>
-
+    <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

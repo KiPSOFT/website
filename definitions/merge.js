@@ -1,1 +1,0 @@
-framework.merge('/css/merge.css', '/css/default.css', '/css/icons.min.css');
