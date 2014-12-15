@@ -5,8 +5,8 @@ exports.install = function(framework) {
     framework.route('/benefits/');
     framework.route('/ide/');
     framework.route('/webhosting/');
-    framework.route('/database/');
-    framework.route('/explore/');
+    framework.route('/tools/');
+    framework.route('/features/');
     framework.route('/community/');
     framework.route('/news/');
     framework.route('/usage/', plain_usage);

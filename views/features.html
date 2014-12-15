@@ -1,0 +1,294 @@
+@{meta('@(Framework features)', 'This page contains list of framework features.', 'feature, functionality, methods')}
+
+<div class="container container-padding">
+    <br />
+    <div class="h1">
+        <hr />
+        <h1>@(Framework features)</h1>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(RESTful routing)</h2>
+            <p>@(Framework supports a great routing mechanism. You can define classic route, file route and websocket route. Each route can contains custom flags (e.g. xhr, post, get, json, put, delete, authorize, etc.). Routes can be defined inline.)</p>
+            <pre><code class="js">exports.install = function() {
+    framework.route(&#039;/&#039;, view_homepage);
+    framework.route(&#039;/api/log/&#039;, api_log, [&#039;#middleware&#039;, &#039;put&#039;]);
+    framework.route(&#039;/api/contact/&#039;, api_contact, [&#039;json&#039;, &#039;post&#039;]);
+};
+
+function api_contact() {
+    this.mail(CONFIG(&#039;mail.support&#039;), &#039;mail-views/contact&#039;, this.body);
+    this.json({ success: true });
+}
+
+function view_homepage() {
+// ...
+</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Modules)</h2>
+            <p>@(You can extend your web application with modules. Module can create routes, files and it influences framework behaviours. Framework can uninstall module or install module from URL address.)</p>
+            <pre><code class="js">exports.id = &#039;module-name&#039;;
+exports.version = '1.01';
+
+exports.install = function() {
+    framework.route(&#039;/api/module/{id}/&#039;, api_module);
+};
+
+function api_module(id) {
+    this.json({ success: MODULE('module-name').sum(id, 2) === 5 });
+}
+
+exports.sum = function(a, b) {
+// ...
+</code></pre>
+        </div>
+    </div>
+    <hr class="hidden-sm" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(Websocket example)</h2>
+            <p class="justify">@(Framework supports <strong>WebSocket</strong> protocol, so you can create real-time applications.)</p>
+            <pre><code class="js">exports.install = function() {
+    framework.websocket(&#039;/chat/&#039;, socket_chat, [&#039;json&#039;]);
+};
+
+function socket_chat() {
+    var self = this;
+
+    self.on(&#039;open&#039;, function(client) {
+        console.log(&#039;Online:&#039;, self.online);
+    });
+
+    self.on(&#039;message&#039;, function(client, message) {
+        console.log(message);
+    });
+
+    self.on(&#039;close&#039;, function(client) {
+        console.log(&#039;Online:&#039;, self.online);
+    });
+}</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Server-sents events example)</h2>
+            <p>@(Your application can communicate through <b>Sever-Sent events</b> (one way).)</p>
+            <pre><code class="js">exports.install = function() {
+    framework.websocket(&#039;/communication/&#039;, sse_communication, [&#039;sse&#039;]);
+};
+
+function sse_communication() {
+    var self = this;
+    var counter = 0;
+    var interval = setInterval(function() {
+
+        // @(Creates a response for client in JSON format)
+        self.sse({ counter: counter++ });
+        if (counter !== 50)
+            return;
+
+        self.close();
+        clearInterval(interval);
+
+    }, 1000);
+}</code></pre>
+        </div>
+    </div>
+    <hr class="hidden-sm" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(View engine)</h2>
+            <p>@(Framework supports built-in view engine. Engine supports conditions, loops and nested views. It automatically compresses inline HTML, JavaScripts and CSS. All views are rendered into the layout view. You can rewrite it.)</p>
+            <pre><code class="html">@&#123;title(&#039;This is title&#039;)&#125;
+
+@&#123;helper address(street, city)&#125;
+    &lt;div&gt;&lt;strong&gt;Address&lt;/strong&gt;&lt;/div&gt;
+    &lt;div&gt;@&#123;street&#125;, @&#123;city&#125;&lt;/div&gt;
+@&#123;end&#125;
+
+@&#123;view('contact')&#125; @&#123;address(&#039;Bratislava&#039;, &#039;Slovakia&#039;)&#125;
+
+@&#123;foreach m in model&#125;
+    &lt;div&gt;@&#123;m.name&#125;&lt;/div&gt;
+@&#123;end&#125;</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Localization)</h2>
+            <p>@(Localization is used by the view compilation. All localized text are stored in resource files and <span class="code">$ total -t</span> (total binary) creates resource file automatically from all views. Localization is a big part of views and it's very effective.)</p>
+            <pre><code class="html">@&#123;meta(&#039;This is title&#039;, &#039;@&#40;Description&#41;&#039;, &#039;Keywords&#039;)&#125;
+
+&lt;h1&gt;@&#40;Welcome in our page&#41;&lt;/h1&gt;
+
+&lt;p&gt;@&#40;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Doloribus nemo, obcaecati, accusamus excepturi porro id!Iure suscipit
+sunt laborum ut animi est nesciunt molestiae pariatur
+perspiciatis qui, ratione voluptatem ducimus.&#41;&lt;/p&gt;
+
+@&#123;if url !== '/'&#125;
+&lt;a href=&quot;/&quot;&gt;@&#40;Homepage&#41;&lt;/a&gt;
+@&#123;endif&#125;
+</code></pre>
+        </div>
+    </div>
+    <hr class="hidden-sm" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(Merging, mapping and image resizing)</h2>
+            <p>@(Framework supports real-time merging files (JavaScripts and styles), custom mapping and image resizing through <b>ImageMagick</b> or <b>GraphicsMagick</b>.)</p>
+            <pre><code class="js">// http://...../js/merge.js
+framework.merge(&#039;/js/merge.js&#039;, &#039;/js/a.js&#039;, &#039;/js/b.js&#039;, &#039;/js/c.js&#039;);
+
+// http://...../js/jq.js
+framework.mapping(&#039;/js/jq.js&#039;, &#039;http://code.jquery.com/jquery.min.js&#039;);
+
+// http://...../img/small/logo.jpg
+framework.resize(&#039;/img/small/*.jpg&#039;, 100, 100, {}, &#039;/img/&#039;);
+framework.resize(&#039;/img/blur/*.jpg&#039;, 100, 100, { blur: true }, &#039;/img/&#039;);</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Redirects and restrictions)</h2>
+            <p>@(Set your redirects or restrictions, it is simple and effective. Redirect function supports permanent redirects and you can set restriction to IP or request headers.)</p>
+            <pre><code class="js">framework.redirect(&#039;http://127.0.0.1:8000&#039;, &#039;http://localhost:8000&#039;);
+
+framework.restrictions.disallow(&#039;192.168.11.95&#039;);
+
+// @(Allow only Chrome)
+// framework.restrictions.allow(&#039;user-agent&#039;, /Chrome/g);
+
+// @(Disallow only Chrome)
+framework.restrictions.disallow(&#039;user-agent&#039;, /Chrome/g);</code></pre>
+        </div>
+    </div>
+    <table class="table featurelist" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="col-sm-8">@(Feature name)</th>
+                <th class="center">@(Supports)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@(MVC architecture)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Clean directory structure)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Fully asynchronous)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Static files serving)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports IP restrictions)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports IP redirections)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports merging files (JavaScripts or CSS))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports custom mapping files)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports media streaming)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports modules and packages)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Image resizing (supports ImageMagick or GraphicsMagick))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports WebSockets)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports RESTful routing)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports middleware (like express.js))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports assertion testing)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports workers for heavy CPU operations)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports 3x config files (debug, release, test))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(SMTP mail sender (supports Gmail and classic SMTP servers with auth))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Built-in view engine (you can replace it))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Localization)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports cache mechanism)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports business logic layer)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports schemas for creating business objects)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports injecting scripts, packages and views from URL)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(NoSQL embedded database)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports String, Date, Number prototypes)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports additional utilities (e.g. create URL request))</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+            <tr>
+                <td>@(Supports <strong>generators</strong>)</td>
+                <td class="center"><span class="fa fa-check-circle"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <div class="row m">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <a href="http://docs.totaljs.com/" class="button">@(GETTING STARTED)</a>
+        </div>
+    </div>
+
+</div>
