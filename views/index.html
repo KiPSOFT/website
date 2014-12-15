@@ -1,5 +1,9 @@
 @{meta('total.js - Web application framework for node.js', 'Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS.', 'framework, total.js, node.js, web, application, MVC, partial.js', 'social.jpg')}
 
+<div id="fullpage">
+    <img src="/img/bg.jpg" onload="fullpage()" />
+</div>
+
 <!--
 <div class="container-green">
 asda
@@ -41,7 +45,7 @@ asda
             </div>
             <div class="col-md-3 m">
                 <div class="items-title"><span class="fa fa-compress"></span> <strong>@(Automation)</strong></div>
-                @(Framework automatically compresses JavaScript, HTML and compiles CSS. You don't need other tools (e.g. Grunt).)
+                @(Framework automatically compresses responses via GZIP and compresses JavaScript, HTML and CSS. You don't need other tools (e.g. Grunt).)
             </div>
         </div>
         <div class="row items m">
@@ -65,12 +69,22 @@ asda
     </div>
 </div>
 
-<div class="container container-padding padding">
-    <br />
-    <div class="row m">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <a href="/getting-started/" class="button">@(DOWNLOAD FRAMEWORK)</a>
+<div class="container">
+    <div class="container-padding">
+        <br />
+        <br />
+        <div class="row m">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="justify">Total.js is free <strong>web application framework for node.js</strong> and contains all modern features for creating rich web applications. Its core contains own web server for serving static and dynamic content. It supports streaming, uploading, image resizing, automatic content compression and many more.</p>
+            </div>
+        </div>
+
+        <div class="row m">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <a href="/explore/" class="button">@(EXPLORE FUNCTIONALITY)</a>
+            </div>
         </div>
     </div>
 </div>
