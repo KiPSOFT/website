@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(RESTful routing)</h2>
-            <p>@(Framework supports a great routing mechanism. You can define classic route, file route and websocket route. Each route can contains custom flags (e.g. xhr, post, get, json, put, delete, authorize, etc.). Routes can be defined inline.)</p>
+            <p>@(Framework supports a great routing mechanism. You can define a classic route, file route and websocket route. Each route can contains custom flags (e.g. xhr, post, get, json, put, delete, authorize, etc.). Routes can be defined inline.)</p>
             <pre><code class="js">exports.install = function() {
     framework.route(&#039;/&#039;, view_homepage);
     framework.route(&#039;/api/log/&#039;, api_log, [&#039;#middleware&#039;, &#039;put&#039;]);
@@ -147,7 +147,7 @@ framework.resize(&#039;/img/blur/*.jpg&#039;, 100, 100, { blur: true }, &#039;/i
         </div>
         <div class="col-lg-6 m">
             <h2>@(Redirects and restrictions)</h2>
-            <p>@(Set your redirects or restrictions, it is simple and effective. Redirect function supports permanent redirects and you can set restriction to IP or request headers.)</p>
+            <p>@(Set your redirects or restrictions, it's simple and effective. The redirect function supports permanent redirects and you can set the restriction to the IP address or headers.)</p>
             <pre><code class="js">framework.redirect(&#039;http://127.0.0.1:8000&#039;, &#039;http://localhost:8000&#039;);
 
 framework.restrictions.disallow(&#039;192.168.11.95&#039;);
