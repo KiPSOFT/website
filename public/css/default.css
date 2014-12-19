@@ -23,7 +23,7 @@ body { padding: 0; margin:0; font-family: Arial; background-color: white; color:
 .footer li { position: relative; display: inline-block; margin: 0 5px; }
 .footer .fa { width: 10px; }
 
-.center { text-align: center; }
+.center { text-align: center !important; }
 .padding { padding-top: 30px; padding-bottom: 30px; }
 
 .items { font-size: 12px; }
@@ -38,6 +38,7 @@ body { padding: 0; margin:0; font-family: Arial; background-color: white; color:
 .linkslist .fa-thumbs-up { font-size: 14px; color: gray; }
 .linkslist td { vertical-align: middle !important; }
 
+.b { font-weight: bold; }
 .m { margin-bottom: 20px; }
 
 .button { display: block; border: 1px solid #409AE6; padding: 20px 0; text-align: center; border-radius: 8px; color: #409AE6; font-family: 'Roboto Condensed'; font-size: 18px; background-color: white; }
@@ -59,3 +60,9 @@ h3 { font:normal 16px 'Roboto Condensed'; color: #202020; height: 18px; margin: 
 .justify { text-align: justify; }
 .code { padding: 2px 5px; color: black; background-color: #F0F0F0; }
 hr { border-top: 1px solid #E0E0E0; margin-bottom: 35px; }
+table tr:nth-child(even) { background-color: #F5F5F5; }
+
+.img-responsive { margin: 0 auto; }
+.count { background-color: #E0E0E0; margin-right: 3px; font-size: 10px; border-radius: 4px; padding: 2px 3px; vertical-align: middle; text-decoration: none !important; color: gray; }
+.footer .count {text-decoration: none !important; }
+.fork { position:absolute; right:0; border:0; }

@@ -114,7 +114,7 @@ function sse_communication() {
         </div>
         <div class="col-lg-6 m">
             <h2>@(Localization)</h2>
-            <p>@(Localization is used by the view compilation. All localized text are stored in resource files and <span class="code">$ total -t</span> (total binary) creates resource file automatically from all views. Localization is a big part of views and it's very effective.)</p>
+            <p>@(Localization is used by the view compilation. All localized text are stored in resource files and <span class="code">$ total -translate</span> (total binary) creates resource file automatically from all views. Localization is a big part of views and it's very effective.)</p>
             <pre><code class="html">@&#123;meta(&#039;This is title&#039;, &#039;@&#40;Description&#41;&#039;, &#039;Keywords&#039;)&#125;
 
 &lt;h1&gt;@&#40;Welcome in our page&#41;&lt;/h1&gt;
@@ -158,6 +158,58 @@ framework.restrictions.disallow(&#039;192.168.11.95&#039;);
 // @(Disallow only Chrome)
 framework.restrictions.disallow(&#039;user-agent&#039;, /Chrome/g);</code></pre>
         </div>
+    </div>
+    <hr class="hidden-sm" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(Array prototypes)</h2>
+            <p>@(The framework contains extended prototype of the array. This prototype contains many useful functions. <b>Example:</b>)</p>
+            <pre><code class="js">var user = arrayUsers.find(function(doc, index) {
+    return doc.alias === &#039;Peter&#039;;
+});
+
+arrayUsers.remove(&#039;alias&#039;, &#039;Lucia&#039;);
+arrayUsers.randomize();
+
+var first = arrayUsers.first();
+var last = arrayUsers.last();
+var order = arrayUsers.orderBy(&#039;alias&#039;);
+var skip = order.skip(10);
+var take = skip.take(10);
+
+var fn = [];
+
+fn.push(function(next) { next(); });
+fn.push(function(next) { next(); });
+
+fn.async(function() {
+    console.log(&#039;completed&#039;);
+});</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Other prototypes)</h2>
+            <p>@(The framework contains Strings, Numbers and Dates prototypes which are very helpful for creating web application. <b>Example</b>:)</p>
+            <pre><code class="js">var date = new Date();
+date = date.add(&#039;day&#039;, 5).add(&#039;minute&#039;, 20).add(&#039;h&#039;, -1);
+
+console.log(date.format(&#039;dd.MM.yyyy HH:mm:ss&#039;)); // @(Custom format)
+console.log(date.format()); // @(ISO format without timezone)
+
+var same = date.compare(new Date()) === 0; // @(Date comparison)
+var number = 10030.34;
+
+console.log(number.format(4, &#039;,&#039;)) // Result: 10,030.3400
+console.log(number.format(6, &#039;.&#039;, &#039;,&#039;)) // Result: 10.030,340000
+console.log(number.format(0)) // Result: 10 030
+number = 2;
+console.log(number.padLeft(5)); // Result: 00002
+
+var string = &#039;Value&#039;;
+console.log(string.startsWith(&#039;Val&#039;));
+console.log(&#039;Hash: {0}.&#039;.format(string.hash(&#039;sha1&#039;)));
+console.log(&#039;2014-12-24&#039;).parseDate());
+console.log(value.isEmail());
+number = &#039;3483&#039;.parseInt();</code></pre></div>
     </div>
     <table class="table featurelist" border="0" cellpadding="0" cellspacing="0">
         <thead>

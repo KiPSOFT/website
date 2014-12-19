@@ -13,11 +13,10 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     @{head}
     @{js('default.js')}
-    @{css('bootstrap.min.css', 'default.css', 'font-awesome.min.css')}
+    @{css('bootstrap.min.css', 'font-awesome.min.css', 'default.css')}
     @{favicon('favicon.ico')}
 </head>
 <body>
-
     <div class="header">
         <div class="container">
             <a href="/" class="logo"><img src="/img/logo.png" /></a>
@@ -37,17 +36,16 @@
         <div class="center">
             <div><a href="http://www.petersirka.eu"><img src="/img/petersirka.png" width="40" height="40" alt="Peter Širka - Maestro" /></a></div>
             <br />
-            <div>&copy; 2012-2015. Code licensed under <a href="https://github.com/totaljs/framework/blob/master/license.txt">MIT</a>.
+            <div>&copy; @(2012-2015. Code licensed under) <a href="https://github.com/totaljs/framework/blob/master/license.txt">MIT</a>.
             <ul>
                 <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework">GitHub</a></li>
-                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/examples">+100 Examples</a></li>
-                <li><span class="fa fa-caret-right"></span> <a href="http://docs.totaljs.com">Documentation</a></li>
-                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/issues">Issues</a></li>
-                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/releases">Releases</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/examples">@(Examples)</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="http://docs.totaljs.com" class="b">@(Documentation)</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/issues">@(Issues)</a></li>
+                <li><span class="fa fa-caret-right"></span> <a href="https://github.com/totaljs/framework/releases">@(Releases)</a></li>
             </ul>
         </div>
     </div>
     <script>hljs.initHighlightingOnLoad();</script>
-
 </body>
 </html>
