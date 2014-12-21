@@ -12,6 +12,8 @@ body { padding: 0; margin:0; font-family: Arial; background-color: white; color:
 .menu a { display: block; font-family: 'Roboto Condensed'; font-weight: 700; font-size: 13px; text-transform: uppercase; color: black; padding: 3px 0; border-bottom: 2px solid white; }
 .menu a:hover { border-bottom: 2px solid black; color: black; text-decoration: none; }
 .menu .selected { border-bottom: 2px solid black; color: black; text-decoration: none; }
+.important { color: #D8532E !important; }
+.important.selected { border-bottom: 2px solid #D8532E !important; }
 
 .container-green { background-color: #8AB15C; padding: 50px 0; text-align: center; }
 .container-black { background-color: #202020; padding: 20px 40px 0; }
@@ -35,7 +37,7 @@ body { padding: 0; margin:0; font-family: Arial; background-color: white; color:
 .featurelist td { vertical-align: middle !important; }
 
 .linkslist .fa { font-size: 30px; color: #40A0EA; }
-.linkslist .fa-thumbs-up { font-size: 14px; color: gray; }
+.linkslist .fa-thumbs-up { font-size: 14px; color: #68B25B; width: 16px; }
 .linkslist td { vertical-align: middle !important; }
 
 .b { font-weight: bold; }
@@ -66,3 +68,7 @@ table tr:nth-child(even) { background-color: #F5F5F5; }
 .count { background-color: #E0E0E0; margin-right: 3px; font-size: 10px; border-radius: 4px; padding: 2px 3px; vertical-align: middle; text-decoration: none !important; color: gray; }
 .footer .count {text-decoration: none !important; }
 .fork { position:absolute; right:0; border:0; }
+.reference { text-align: center; background-color: #F5F5F5; padding: 10px 0; margin-bottom: 2px; }
+.reference div { font-size: 11px; color: gray; }
+.reference:first-child { border-radius: 4px 0 0 4px; }
+.reference:last-child { border-radius: 0 4px 4px 0; }
