@@ -4,7 +4,7 @@
     <br />
     <div class="h1">
         <hr />
-        <h1>@(Framework features)</h1>
+        <h1>@(The framework features)</h1>
     </div>
     <br />
     <div class="row">
@@ -94,7 +94,7 @@ function sse_communication() {
 }</code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(View engine)</h2>
@@ -130,7 +130,7 @@ perspiciatis qui, ratione voluptatem ducimus.&#41;&lt;/p&gt;
 </code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(Merging, mapping and image resizing)</h2>
@@ -159,7 +159,7 @@ framework.restrictions.disallow(&#039;192.168.11.95&#039;);
 framework.restrictions.disallow(&#039;user-agent&#039;, /Chrome/g);</code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(Array prototypes)</h2>
@@ -211,6 +211,36 @@ console.log(&#039;2014-12-24&#039;).parseDate());
 console.log(value.isEmail());
 number = &#039;3483&#039;.parseInt();</code></pre></div>
     </div>
+    <hr class="hidden-sm hidden-xs" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(Extend the framework)</h2>
+            <p>@(The framework is extendible, you can install module or package from the URL address.)</p>
+            <pre><code class="js">// Install the module from the URL address
+INSTALL(&#039;module&#039;, &#039;https://modules.totaljs.com/session/v1.01/session.js&#039;);
+
+// Or from your URL address
+INSTALL(&#039;module&#039;, &#039;http://www.my-own-server.com/ddos.js&#039;);
+
+// Install the package from the URL address
+INSTALL(&#039;package&#039;, &#039;https://modules.totaljs.com/webcounter/v1.01/webcounter.package&#039;);
+</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Run the framework without installation)</h2>
+            <p>@(Run the framework without NPM and without installation.)</p>
+            <pre><code class="js">// The main function
+function main() {
+    framework.route(&#039;/&#039;, function() {
+        this.plain(&#039;HOMEPAGE&#039;);
+    }).http(&#039;debug&#039;);
+}
+
+require(&#039;http&#039;).get(&#039;http://modules.totaljs.com/total.js/v1.7.0/total.js&#039;,function(res){var buffer=[];res.on(&#039;data&#039;,function(e){buffer.push(e.toString(&#039;utf8&#039;))});res.on(&#039;end&#039;,function(){eval(buffer.join(&#039;&#039;));if(typeof main!==&#039;undefined&#039;)main()})});
+</code></pre></div>
+    </div>
+    <hr class="hidden-sm hidden-xs" />
+    <h2>The framework feature list</h2>
     <table class="table featurelist" border="0" cellpadding="0" cellspacing="0">
         <thead>
             <tr>
