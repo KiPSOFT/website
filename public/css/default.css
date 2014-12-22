@@ -12,10 +12,14 @@ body { padding: 0; margin:0; font-family: Arial; background-color: white; color:
 .menu a { display: block; font-family: 'Roboto Condensed'; font-weight: 700; font-size: 13px; text-transform: uppercase; color: black; padding: 3px 0; border-bottom: 2px solid white; }
 .menu a:hover { border-bottom: 2px solid black; color: black; text-decoration: none; }
 .menu .selected { border-bottom: 2px solid black; color: black; text-decoration: none; }
+.menu-button { display: none; color: gray; }
+.menu-button:hover { color: #505050; }
+.menu-button:active { color: black !important; }
+.menu-button:focus { color: black !important; }
+
 .important { color: #D8532E !important; }
 .important.selected { border-bottom: 2px solid #D8532E !important; }
 .important:hover { border-bottom: 2px solid #D8532E !important; }
-
 .container-green { background-color: #8AB15C; padding: 50px 0; text-align: center; }
 .container-black { background-color: #202020; padding: 20px 40px 0; }
 
@@ -77,3 +81,9 @@ table tr:nth-child(even) { background-color: #F5F5F5; }
 .reference:last-child { border-radius: 0 4px 4px 0; }
 .panel { background-color: black; border-radius: 4px; }
 .panel hr { border-top: 1px dotted #303030; margin: 10px 0 15px; }
+
+@media (max-width:768px) {
+    .menu-button { display: block; float: right; font-size: 40px; margin: 13px 0 0 0; }
+    .menu { display: none; position: absolute; background-color: white; left: 0; top: 80px; width: 100%; box-shadow: 0 2px 15px rgba(0,0,0,0.2); padding: 5px 0; }
+    .menu li { display: block; float: none; margin: 5px; padding: 0 15px; }
+}

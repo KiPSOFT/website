@@ -16,4 +16,7 @@ $(document).ready(function() {
     $('.menu').find('a[href="' + window.location.pathname + '"]').addClass('selected');
     $(window).resize(fullpage);
     fullpage();
+    $('.menu-button').bind('click', function(e) {
+        $('.menu').toggle();
+    });
 });
