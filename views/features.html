@@ -1,16 +1,16 @@
-@{meta('@(Framework features)', 'This page contains list of framework features.', 'feature, functionality, methods')}
+@{meta('@(The framework features)', 'This page contains list of framework features.', 'feature, functionality, methods')}
 
 <div class="container container-padding">
     <br />
     <div class="h1">
         <hr />
-        <h1>@(Framework features)</h1>
+        <h1>@(The framework features)</h1>
     </div>
     <br />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(RESTful routing)</h2>
-            <p>@(Framework supports a great routing mechanism. You can define a classic route, file route and websocket route. Each route can contains custom flags (e.g. xhr, post, get, json, put, delete, authorize, etc.). Routes can be defined inline.)</p>
+            <p>@(The framework supports a great routing mechanism. You can define a classic route, file route and websocket route. Each route can contains custom flags (e.g. xhr, post, get, json, put, delete, authorize, etc.). Routes can be defined as inline.)</p>
             <pre><code class="js">exports.install = function() {
     framework.route(&#039;/&#039;, view_homepage);
     framework.route(&#039;/api/log/&#039;, api_log, [&#039;#middleware&#039;, &#039;put&#039;]);
@@ -28,7 +28,7 @@ function view_homepage() {
         </div>
         <div class="col-lg-6 m">
             <h2>@(Modules)</h2>
-            <p>@(You can extend your web application with modules. Module can create routes, files and it influences framework behaviours. Framework can uninstall module or install module from URL address.)</p>
+            <p>@(You can extend your web application with modules. The module can create routes, files and it influences the framework behaviours. The framework can uninstall module or install the module from URL address.)</p>
             <pre><code class="js">exports.id = &#039;module-name&#039;;
 exports.version = '1.01';
 
@@ -49,7 +49,7 @@ exports.sum = function(a, b) {
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(Websocket example)</h2>
-            <p class="justify">@(Framework supports <strong>WebSocket</strong> protocol, so you can create real-time applications.)</p>
+            <p class="justify">@(The framework supports the <strong>WebSocket</strong> protocol, you can create realtime applications.)</p>
             <pre><code class="js">exports.install = function() {
     framework.websocket(&#039;/chat/&#039;, socket_chat, [&#039;json&#039;]);
 };
@@ -94,11 +94,11 @@ function sse_communication() {
 }</code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(View engine)</h2>
-            <p>@(Framework supports built-in view engine. Engine supports conditions, loops and nested views. It automatically compresses inline HTML, JavaScripts and CSS. All views are rendered into the layout view. You can rewrite it.)</p>
+            <p>@(The framework supports built-in view engine. The engine supports conditions, loops and nested views. It compresses inline HTML, JavaScripts and CSS automatically. All views are rendered into the layout view. You can rewrite it.)</p>
             <pre><code class="html">@&#123;title(&#039;This is title&#039;)&#125;
 
 @&#123;helper address(street, city)&#125;
@@ -114,7 +114,7 @@ function sse_communication() {
         </div>
         <div class="col-lg-6 m">
             <h2>@(Localization)</h2>
-            <p>@(Localization is used by the view compilation. All localized text are stored in resource files and <span class="code">$ total -translate</span> (total binary) creates resource file automatically from all views. Localization is a big part of views and it's very effective.)</p>
+            <p>@(The localization is used by the view compilation. All localized text are stored in the resource files and <span class="code">$ total -translate</span> (total binary) creates the resource file automatically from all views. The localization is a big part of views and it's very effective.)</p>
             <pre><code class="html">@&#123;meta(&#039;This is title&#039;, &#039;@&#40;Description&#41;&#039;, &#039;Keywords&#039;)&#125;
 
 &lt;h1&gt;@&#40;Welcome in our page&#41;&lt;/h1&gt;
@@ -130,11 +130,11 @@ perspiciatis qui, ratione voluptatem ducimus.&#41;&lt;/p&gt;
 </code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(Merging, mapping and image resizing)</h2>
-            <p>@(Framework supports real-time merging files (JavaScripts and styles), custom mapping and image resizing through <b>ImageMagick</b> or <b>GraphicsMagick</b>.)</p>
+            <p>@(The framework supports realtime merging files (JavaScripts and styles), custom mapping and the image resizing through <b>ImageMagick</b> or <b>GraphicsMagick</b>.)</p>
             <pre><code class="js">// http://...../js/merge.js
 framework.merge(&#039;/js/merge.js&#039;, &#039;/js/a.js&#039;, &#039;/js/b.js&#039;, &#039;/js/c.js&#039;);
 
@@ -147,7 +147,7 @@ framework.resize(&#039;/img/blur/*.jpg&#039;, 100, 100, { blur: true }, &#039;/i
         </div>
         <div class="col-lg-6 m">
             <h2>@(Redirects and restrictions)</h2>
-            <p>@(Set your redirects or restrictions, it's simple and effective. The redirect function supports permanent redirects and you can set the restriction to the IP address or headers.)</p>
+            <p>@(Set your redirects and restrictions, it's simple. The redirect function supports permanent redirects and you can set the restriction to the IP address or headers.)</p>
             <pre><code class="js">framework.redirect(&#039;http://127.0.0.1:8000&#039;, &#039;http://localhost:8000&#039;);
 
 framework.restrictions.disallow(&#039;192.168.11.95&#039;);
@@ -159,7 +159,7 @@ framework.restrictions.disallow(&#039;192.168.11.95&#039;);
 framework.restrictions.disallow(&#039;user-agent&#039;, /Chrome/g);</code></pre>
         </div>
     </div>
-    <hr class="hidden-sm" />
+    <hr class="hidden-sm hidden-xs" />
     <div class="row">
         <div class="col-lg-6 m">
             <h2>@(Array prototypes)</h2>
@@ -211,6 +211,36 @@ console.log(&#039;2014-12-24&#039;).parseDate());
 console.log(value.isEmail());
 number = &#039;3483&#039;.parseInt();</code></pre></div>
     </div>
+    <hr class="hidden-sm hidden-xs" />
+    <div class="row">
+        <div class="col-lg-6 m">
+            <h2>@(Extend the framework)</h2>
+            <p>@(The framework is extendible, you can install module or package from the URL address.)</p>
+            <pre><code class="js">// Install the module from the URL address
+INSTALL(&#039;module&#039;, &#039;https://modules.totaljs.com/session/v1.01/session.js&#039;);
+
+// Or from your URL address
+INSTALL(&#039;module&#039;, &#039;http://www.my-own-server.com/ddos.js&#039;);
+
+// Install the package from the URL address
+INSTALL(&#039;package&#039;, &#039;https://modules.totaljs.com/webcounter/v1.01/webcounter.package&#039;);
+</code></pre>
+        </div>
+        <div class="col-lg-6 m">
+            <h2>@(Run the framework without installation)</h2>
+            <p>@(Run the framework without NPM and without installation.)</p>
+            <pre><code class="js">// The main function
+function main() {
+    framework.route(&#039;/&#039;, function() {
+        this.plain(&#039;HOMEPAGE&#039;);
+    }).http(&#039;debug&#039;);
+}
+
+require(&#039;http&#039;).get(&#039;http://modules.totaljs.com/total.js/v1.7.0/total.js&#039;,function(res){var buffer=[];res.on(&#039;data&#039;,function(e){buffer.push(e.toString(&#039;utf8&#039;))});res.on(&#039;end&#039;,function(){eval(buffer.join(&#039;&#039;));if(typeof main!==&#039;undefined&#039;)main()})});
+</code></pre></div>
+    </div>
+    <hr class="hidden-sm hidden-xs" />
+    <h2>The framework feature list</h2>
     <table class="table featurelist" border="0" cellpadding="0" cellspacing="0">
         <thead>
             <tr>

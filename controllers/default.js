@@ -1,17 +1,37 @@
 exports.install = function(framework) {
     framework.route('/');
     framework.route('/download/');
-    framework.route('/totalstack/');
     framework.route('/benefits/');
-    framework.route('/ide/');
-    framework.route('/webhosting/');
     framework.route('/tools/');
     framework.route('/features/');
     framework.route('/community/');
+    framework.route('/important/');
     framework.route('/news/');
     framework.route('/usage/', plain_usage);
     framework.file('counter for .zip files', static_filecounter);
+    framework.route('/*', redirect);
 };
+
+function redirect() {
+    var self = this;
+    switch (self.req.path[0]) {
+        case 'news':
+        case 'benefits':
+            self.redirect('/features/', true);
+            break;
+        case 'download':
+            self.redirect('http://docs.totaljs.com');
+            break;
+        case 'totalstack':
+            self.redirect('https://github.com/totaljs/modules/tree/master/Helpers/angular.js', true);
+            break;
+        case 'ide':
+        case 'webhosting':
+            self.redirect('/tools/', true);
+            break;
+    }
+    self.throw404();
+}
 
 function plain_usage() {
     var self = this;
