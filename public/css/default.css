@@ -79,8 +79,9 @@ table tr:nth-child(even) { background-color: #F5F5F5; }
 .reference div { font-size: 11px; color: gray; }
 .reference:first-child { border-radius: 4px 0 0 4px; }
 .reference:last-child { border-radius: 0 4px 4px 0; }
-.panel { background-color: black; border-radius: 4px; }
-.panel hr { border-top: 1px dotted #303030; margin: 10px 0 15px; }
+.panel { background-color: #F0F0F0; border-radius: 4px; padding: 0 10px; }
+.panel hr { border-top: 1px solid #D0D0D0; margin: 10px 0 15px; }
+.panel .items-title strong { color: #505050; }
 
 @media (max-width:768px) {
     .menu-button { display: block; float: right; font-size: 40px; margin: 13px 0 0 0; }

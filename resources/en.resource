@@ -1,5 +1,5 @@
 // Total.js translation file
-// Created: 2015-01-04 20:30
+// Created: 2015-01-04 22:41
 
 // community.html
 T-1214307848     : The framework community
@@ -10,6 +10,16 @@ T1184803988      : Framework on Twitter
 T-1986696397     : Framework on Google+
 T1208278213      : Framework on Facebook
 T1905839901      : Framework on LinkedIn
+
+// donation.html
+T-756282366      : The donation and plans
+T-371992039      : The donation for the framework
+T2024865317      : <b>Make your donation now</b>. The framework earns your money and is absolutely free. I develop the framework over 2 years with many examples and <b>I want to continue</b>.<br /><br />The framework needs your donation for ensure future development and improving the documentation.
+T1990481647      : Plans for 2015
+T1087155766      : Internationalization
+T-332846065      : I want to translate the documentation and website for many countries. Many people do not know to translate english texts.
+T-98810485       : More modules and more packages
+T-556669748      : The plan is create helpful modules and packages which can help you with creating your web applications. Modules and packages are very important for the framework.
 
 // features.html
 T-2083195826     : The framework features
@@ -78,16 +88,6 @@ T1478524111      : RESTful routing
 // features.html, tools.html
 T1314445157      : GETTING STARTED
 
-// important.html
-T-756282366      : The donation and plans
-T-371992039      : The donation for the framework
-T1710081181      : <b>Make your donation now</b>. The framework earns you money and is absolutely free. I develop the framework over 2 years with many examples and <b>I want to continue</b>.<br /><br />The framework needs your donation for ensure future development and improving the documentation.
-T1990481647      : Plans for 2015
-T1087155766      : Internationalization
-T-332846065      : I want to translate the documentation and website for many countries. Many people do not know to translate english texts.
-T-98810485       : More modules and more packages
-T-1025773300     : The plan is create a more helpful modules and packages which can help you with creating your web applications. Modules and packages are very important for the framework.
-
 // index.html
 T1194933216      : total.js - Web application framework for node.js
 T-59562713       : Free web application framework for building Web sites and Web applications using JavaScript, HTML and CSS.
@@ -127,7 +127,7 @@ T1492462760      : Download
 T523718601       : Community
 T-1908600166     : Documentation
 T80992699        : Tools
-T1795442690      : Important
+T1223027634      : Donation
 T-367434452      : 2012-2015. Code licensed under
 T2002223209      : Examples
 T-2095292710     : Issues
