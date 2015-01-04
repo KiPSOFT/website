@@ -1,12 +1,10 @@
 exports.install = function(framework) {
     framework.route('/');
     framework.route('/download/');
-    framework.route('/benefits/');
     framework.route('/tools/');
     framework.route('/features/');
     framework.route('/community/');
     framework.route('/important/');
-    framework.route('/news/');
     framework.route('/usage/', plain_usage);
     framework.file('counter for .zip files', static_filecounter);
     framework.route('/*', redirect);
