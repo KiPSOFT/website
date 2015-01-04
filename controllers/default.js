@@ -4,7 +4,7 @@ exports.install = function(framework) {
     framework.route('/tools/');
     framework.route('/features/');
     framework.route('/community/');
-    framework.route('/important/');
+    framework.route('/donation/');
     framework.route('/usage/', plain_usage);
     framework.file('counter for .zip files', static_filecounter);
     framework.route('/*', redirect);
