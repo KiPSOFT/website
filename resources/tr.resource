@@ -4,7 +4,7 @@
 // community.html
 T-1214307848     : Framework Topluluğu
 T-1509450882     : GitHub üzerinde ki hatalar
-T1300911501      : Gitter: GitHub için Chat
+T1300911501      : Gitter: GitHub için sohbet
 T-128615623      : Google Forumları
 T1184803988      : Twitter'da Framework
 T-1986696397     : Google+ da Framework
@@ -32,7 +32,7 @@ T-1990586254     : Server-sents olayları örneği
 T579326529       : Uygulamanız <b>Sever-Sent olayları</b> ile haberleşebilir. (tek yönlü olarak).
 T-551773893      : Terminal için JSON formatında cevap oluşturabilirsiniz.
 T1325300733      : View motoru
-T-601220556      : Framework içinde hazır halde gelen View motoru mevcuttur. Bu motor koşulları, döngüleri, iç içe geçmiş view'leri destekler. HTML, JavaScript ve CSS otomatik olarak sıkıştırılır. Tüm view dosyaları şablon(layout) view ile birlikte yorumlanır. Şablon view'ı tekrar yazabilirsiniz.
+T-601220556      : Framework içinde hazır halde gelen View motoru mevcuttur. Bu motor koşulları, döngüleri, iç içe geçmiş view'leri destekler. HTML, JavaScript ve CSS otomatik olarak sıkıştırılır. Tüm view dosyaları sayfa düzeni (layout) view sayfası ile birlikte yorumlanır. Sayfa düzeni view dosyasını tekrar yazabilirsiniz.
 T-647685447      : Yerelleştirme
 T-479832497      : Yerelleştirme view derlemesinde kullanılır. Tüm yerelleştirilmiş metinler kaynak dosyaları içinde depolanır ve <span class="code">$ total -translate</span> (total binary) komutu ile tüm view dosyaları içinden otomatik olarak kaynak dosyasına oluşturulabilir. Yerelleştirme view dosyalarının büyük bir parçasıdır ve çok etkili bir kullanıma sahiptir.
 T1458255194      : Birleştirme, haritalama ve resim yeniden boyutlandırma
@@ -100,11 +100,11 @@ T-1643275757     : Mükemmel güvenlik
 T-1575473836     : Framework bir çok iyi güvenlik elemanlarını destekler. Alınan veriyi otomatik olarak çözümler ve gelen istekle kontrol eder.
 T-1629337799     : Genişletilebilir framework
 T-2041578234     : Framework size göre genişletilebilinir. Siz bulunan metodları tekrar yazabilir veya ihtiyaçlarınız doğrultusunda uyumlu olacak şekilde değiştirebilirsiniz.
-T1869886662      : Güzel template
-T458568782       : Framework kendi alanında tek bir template motoruna sahiptir. Güzel, basit ve güçlüdür. Template desteği web geliştirme silahları arasında en önemli olanıdır.
+T1869886662      : Güçlü template
+T458568782       : Framework kendi alanında tekil template motoruna sahiptir. Güzel, basit ve güçlüdür. Template desteği web geliştirme araçları arasında frameworklerin olmazsa olmazıdır.
 T1753328170      : Birden fazla aksiyonu tek bir URL adresine veya dağıtılmış HTTP metodlarına tanımlayabilirsiniz. Framework çok iyi çalışan bir rota desteğine sahiptir.
 T1689952427      : Gerçek zamanlı uygulamalar oluşturun
-T912078862       : Frameowkr WebSocket (RFC 6455) ve Server-Sent olay protokollerine destek verir. Bu sayede siz gerçek zamanlı uygulamalar veya çok oyunculu oyunlar geliştirebilirsiniz.
+T912078862       : Framework WebSocket (RFC 6455) ve Server-Sent olay protokollerine destek verir. Bu sayede siz gerçek zamanlı uygulamalar veya çok oyunculu oyunlar geliştirebilirsiniz.
 T-1957301961     : Otomasyon
 T-547767846      : Framework otomatik olarak cevap verileri GZIP olarak sıkıştırır ve JavaScript, HTML, CSS kodlarınıda aynı şekilde sıkıştırarak gönderir. Bu sayede sizin başka bir araç kullanmanıza gerek kalmaz (Örn: Grunt).
 T-829804512      : Basit kullanım
@@ -116,13 +116,13 @@ T-1976149929     : Framework büyük uygulamalar için iyi bir mimariye sahiptir
 T274100716       : Dostça lisanslama
 T-1026548244     : Framework MIT lisansı ile lisanslanmıştır. Bu sayede ticari uygulamarda rahatlıkla kullanılabilir.
 T906139201       : node.js için Web uygulama framwork'ü
-T808887091       : Total.js, ücretsiz <strong>node.js için web uygulama frameworküdür</strong> ve zengin web uygulamaları geliştirmek için özellikler içerir. Çekirdeğinde bulunan kendi web sunucusu ile statik ve dinamik dosyaları sunabilir. Akışlar, yüklemeler, resim boyutlandırma, otomatik içerik sıkıştırma ve daha fazlasını destekler. Framework hızlı ve esnektir.<br /><br /><b>Framework herhangi bir bağımlılığa sahip değildir</b>.
+T808887091       : Total.js, <strong>node.js için web uygulama frameworküdür</strong> ve zengin web uygulamaları geliştirmek için özellikler içerir. Ayrıca tamamen ücretsizdir. Çekirdeğinde bulunan kendi web sunucusu ile statik ve dinamik dosyaları sunabilir. Akışlar, yüklemeler, resim boyutlandırma, otomatik içerik sıkıştırma ve daha fazlasını destekler. Framework hızlı ve esnektir.<br /><br /><b>Framework herhangi bir uygulamaya bağımlı değildir.</b>.
 T-1718871937     : Tüm client-side framewokrler ile tamamen uyumludur.
 T454814783       : FRAMEWORK ÖZELLİKLERİ
 T659075912       : E-commerce (MongoDB + GridFS)
-T1821969031      : Real-time localization (WebSocket)
-T-378006330      : Real-time chat (WebSocket)
-T-16602805       : The internet clipboard (CouchDB)
+T1821969031      : Gerçek zamanlı yerelleştirme (WebSocket)
+T-378006330      : Gerçek zamanlı sohbet (WebSocket)
+T-16602805       : Internet pano (CouchDB)
 
 // layout.html
 T-420727794      : Ana sayfa
@@ -135,7 +135,7 @@ T-367434452      : 2012-2015. Lisans altındaki kod
 T2002223209      : Örnekler
 T-2095292710     : Hatalar
 T-486654612      : Sürümler
-T1223027634      : Donation
+T1223027634      : Bağış
 
 // tools.html
 T788499753       : node.js uygulamaları için araçlar
@@ -148,11 +148,11 @@ T466018614       : Servis adı
 T2622298         : Tipi
 T-590135824      : Veritabanı adı
 T-1984916852     : Modül
-T865938143       : (free trial)
-T1242861589      : (free)
-T-297357057      : Webhosting for node.js applications
+T865938143       : (ücretsiz trial)
+T1242861589      : (ücretsiz)
+T-297357057      : node.js uygulamaları için webhosting
 T79996408        : EvenNode - Node.js hosting
-T628720346       : (free limit)
-T401590963       : everything
-T-711395890      : Databases for web applications
-T-1100419005     : Key-Value
+T628720346       : (ücretsiz kısıtlamalı)
+T401590963       : herşey
+T-711395890      : Web uygulamaları için veritabanları
+T-1100419005     : Anahtar-Değer
