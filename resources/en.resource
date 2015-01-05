@@ -1,5 +1,5 @@
 // Total.js translation file
-// Created: 2015-01-04 22:41
+// Created: 2015-01-05 08:31
 
 // community.html
 T-1214307848     : The framework community
@@ -119,6 +119,10 @@ T906139201       : The Web framework for node.js
 T808887091       : Total.js is the free <strong>web application framework for node.js</strong> and contains all modern features for creating rich web applications. Its core contains own web server for serving static and dynamic content. It supports streaming, uploading, image resizing, automatic content compression and many more. The framework is fast and flexible.<br /><br /><b>The framework does not contain any dependencies</b>.
 T-1718871937     : Fully compatible with all client-side frameworks
 T454814783       : FRAMEWORK FEATURES
+T659075912       : E-commerce (MongoDB + GridFS)
+T1821969031      : Real-time localization (WebSocket)
+T-378006330      : Real-time chat (WebSocket)
+T-16602805       : The internet clipboard (CouchDB)
 
 // layout.html
 T-420727794      : Homepage
@@ -140,7 +144,15 @@ T-2048455045     : IDE for node.js applications
 T-900367493      : Application name
 T1939328147      : Platform
 T2368538         : Link
+T865938143       : (free trial)
+T1242861589      : (free)
+T-297357057      : Webhosting for node.js applications
 T466018614       : Service name
 T2622298         : Type
+T79996408        : EvenNode - Node.js hosting
+T628720346       : (free limit)
+T401590963       : everything
+T-711395890      : Databases for web applications
 T-590135824      : Database name
 T-1984916852     : Module
+T-1100419005     : Key-Value

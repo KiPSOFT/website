@@ -89,8 +89,8 @@ T1478524111      : RESTful rota
 T1314445157      : Başlayın
 
 // index.html
-T1194933216      : total.js - node.js İçin Web Uygulama Framework'ü
-T-59562713       : JavaScript, HTML ve CSS kullanarak Web sitesi ve Web uygulaması geliştirmek için kullanabileceğiniz ücretsiz web uygulama framework'ü.
+T1194933216      : total.js - node.js İçin Web Uygulama Framework\'ü
+T-59562713       : JavaScript, HTML ve CSS kullanarak Web sitesi ve Web uygulaması geliştirmek için kullanabileceğiniz ücretsiz web uygulama framework\'ü.
 T-1377727016     : framework, total.js, node.js, web, application, MVC, partial.js
 T879995485       : Modern framework
 T1138391857      : Kolay URL, REST metodları, JavaScript küçültme, XSS koruması, kaynaklar ve MVC mimarisi desteği.
@@ -119,6 +119,10 @@ T906139201       : node.js için Web uygulama framwork'ü
 T808887091       : Total.js, ücretsiz <strong>node.js için web uygulama frameworküdür</strong> ve zengin web uygulamaları geliştirmek için özellikler içerir. Çekirdeğinde bulunan kendi web sunucusu ile statik ve dinamik dosyaları sunabilir. Akışlar, yüklemeler, resim boyutlandırma, otomatik içerik sıkıştırma ve daha fazlasını destekler. Framework hızlı ve esnektir.<br /><br /><b>Framework herhangi bir bağımlılığa sahip değildir</b>.
 T-1718871937     : Tüm client-side framewokrler ile tamamen uyumludur.
 T454814783       : FRAMEWORK ÖZELLİKLERİ
+T659075912       : E-commerce (MongoDB + GridFS)
+T1821969031      : Real-time localization (WebSocket)
+T-378006330      : Real-time chat (WebSocket)
+T-16602805       : The internet clipboard (CouchDB)
 
 // layout.html
 T-420727794      : Ana sayfa
@@ -127,11 +131,11 @@ T1492462760      : İndir
 T523718601       : Topluluk
 T-1908600166     : Dökümantasyon
 T80992699        : Araçlar
-T1795442690      : Önemli
 T-367434452      : 2012-2015. Lisans altındaki kod
 T2002223209      : Örnekler
 T-2095292710     : Hatalar
 T-486654612      : Sürümler
+T1223027634      : Donation
 
 // tools.html
 T788499753       : node.js uygulamaları için araçlar
@@ -144,3 +148,11 @@ T466018614       : Servis adı
 T2622298         : Tipi
 T-590135824      : Veritabanı adı
 T-1984916852     : Modül
+T865938143       : (free trial)
+T1242861589      : (free)
+T-297357057      : Webhosting for node.js applications
+T79996408        : EvenNode - Node.js hosting
+T628720346       : (free limit)
+T401590963       : everything
+T-711395890      : Databases for web applications
+T-1100419005     : Key-Value

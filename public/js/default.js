@@ -19,4 +19,9 @@ $(document).ready(function() {
     $('.menu-button').bind('click', function(e) {
         $('.menu').toggle();
     });
+    var el = $('.language');
+    var language = el.attr('data-selected');
+    if (language === '')
+        language = 'en';
+    el.find('a[data-selected="' + language + '"]').addClass('selected');
 });
