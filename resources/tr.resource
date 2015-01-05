@@ -124,6 +124,7 @@ T659075912       : E-commerce (MongoDB + GridFS)
 T1821969031      : Gerçek zamanlı yerelleştirme (WebSocket)
 T-378006330      : Gerçek zamanlı sohbet (WebSocket)
 T-16602805       : Internet pano (CouchDB)
+T-400085223      : Framework özellik listesi
 
 // layout.html
 T-420727794      : Ana sayfa
