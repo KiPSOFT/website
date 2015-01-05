@@ -10,6 +10,44 @@ exports.install = function(framework) {
     framework.route('/*', redirect);
 };
 
+F.on('controller', function(controller) {
+
+    var language = controller.req.cookie('language');
+
+    if (!controller.query.language) {
+
+        if (!language) {
+            language = controller.req.language;
+            switch (language) {
+                case 'tr':
+                    break;
+                default:
+                    language = '';
+            }
+        }
+
+        if (language === 'en')
+            language = '';
+
+        controller.language = language;
+        return;
+    }
+
+    language = controller.query.language.toLowerCase();
+
+    switch (language) {
+        case 'tr':
+        case 'en':
+            break;
+        default:
+            language = '';
+            break;
+    }
+
+    controller.res.cookie('language', language, '5 days');
+    controller.language = language;
+});
+
 function redirect() {
     var self = this;
     switch (self.req.path[0]) {
