@@ -81,6 +81,7 @@ T-1693817570     : NoSQL gömülü veritabanı desteği
 T2114343589      : String, Date, Number prototipleri desteği
 T-903826796      : Yardımcı program eklemeleri için destek (Örn. URL isteği oluşturma)
 T-1150212211     : <strong>Generator</strong> desteği
+T-400085223      : The framework feature list
 
 // features.html, index.html
 T1478524111      : RESTful rota
