@@ -14,16 +14,16 @@ T1905839901      : LinkedIn'da Framework
 // donation.html
 T-756282366      : Bağış ve planlar
 T-371992039      : Framework'e bağış yaparak destekte bulunabilirsiniz
-T2024865317      : <b>Şimdi bağış yapın.</b>. Framework size para kazandıracaktır ve tamamen ücretsizdir. Ben 2 yılın üstünde framework'ü geliştiriyorum ve bir çok örnekle beraber <b>geliştirmeye devam etmek istiyorum.</b>.<br /><br /> Framework'e daha fazla özellik eklemek ve dökümantasyonunu geliştirmek için sizin desteğinize ihtiyacımız var.
+T2024865317      : <b>Şimdi bağış yapın.</b>. Framework size para kazandıracaktır ve tamamen ücretsizdir. 2 yılın üstünde bir süredir framework'ü bir çok örnekle destekleyerek geliştirmeye devam ediyorum ve <b>geliştirmeye devam etmek istiyorum.</b>.<br /><br /> Framework'e daha fazla özellik eklemek ve dökümantasyonunu geliştirmek için sizin desteğinize ihtiyacım var.
 T1990481647      : 2015 Planları
 T1087155766      : Global Dil Desteği
 T-332846065      : Ben başka ülkelerin dillerine, websitesini ve dökümantasyonu çevirmek istiyorum. Böylece framework'ü daha yaygın bir hale getirebileceğiz çünkü çoğu kişi için ingilizce metinleri okumak yeterli olmuyor.
 T-98810485       : Daha fazla modül ve daha fazla paket
-T-556669748      : Bu plan, web uygulamarınıza yardımcı olacak daha fazla modül ve paketleri oluşturmayı amaçlıyor. Modüller ve paketler framework için çok önemlidir.
+T-556669748      : Bu plan, web uygulamarınıza yardımcı olacak daha fazla modül ve paketleri oluşturmayı amaçlıyor. Modüller ve paketler framework'ün genişletilebilir olması için çok önemli bir yer tutuyor.
 
 // features.html
 T-2083195826     : Framework özellikleri
-T121818904       : Framework mükemmel bir rota(route) mekanimasına sahiptir. Klasik bir rota tanımlamanız dışında, dosya rotası ve websocket rotasıda tanımlayabilirsiniz. Her rota özel bayraklar içerir (örn. xhr, post, get, json, put, delete, authorize, vb.). Rota satır içinde tanımlanır.
+T121818904       : Framework mükemmel bir rota(route) mekanizmasına sahiptir. Klasik bir rota tanımlamanız dışında, dosya rotası ve websocket rotasıda tanımlayabilirsiniz. Her rota özel bayraklar içerir (örn. xhr, post, get, json, put, delete, authorize, vb.). Rota satır içinde tanımlanır.
 T-1402880153     : Modüller
 T556951489       : Web uygulamanız için modüller geliştirebilirsiniz. Bu modüller rota, dosya oluşturabilir ve framework'ün davranışlarını etkileyebilir. Framework ayrıca URL adresi üzerinden modülleri kurabilir veya kaldırabilir.
 T575099377       : Websocket örneği
@@ -49,7 +49,7 @@ T1513255782      : Özel biçim
 T-2055293281     : Zaman alanı dışında ISO biçimi
 T-100133989      : Tarih karşılaştırma
 T-1724354903     : Framework'ü genişletme
-T-1363628814     : Framework geliştirilebilir bir yapıya sahiptir, URL adresi üzerinden modül veya paket kurabilirsiniz.
+T-1363628814     : Framework genişletilebilir bir yapıya sahiptir, URL adresi üzerinden modül veya paket kurabilirsiniz.
 T448117464       : Framework'ü kurulum olmadan çalıştırmak
 T-202149792      : Framework'ü NPM ve kurulum olmadan çalıştırmak
 T1315155349      : Özellik adı
@@ -90,7 +90,7 @@ T1478524111      : RESTful rota
 T1314445157      : Başlayın
 
 // index.html
-T1194933216      : total.js - node.js İçin Web Uygulama Framework\'ü
+T1194933216      : total.js - node.js İçin Web Framework
 T-59562713       : JavaScript, HTML ve CSS kullanarak Web sitesi ve Web uygulaması geliştirmek için kullanabileceğiniz ücretsiz web uygulama framework\'ü.
 T-1377727016     : framework, total.js, node.js, web, application, MVC, partial.js
 T879995485       : Modern framework
@@ -114,11 +114,11 @@ T1576138625      : Her yerde çalıştırabilme
 T144895302       : Bir kere kurun ve her yerde çalıştırın - Unix, Linux, Mac OS X, Windows veya SunOS. Web siteniz için başka bir uygulamaya ihtiyacınız yoktur.
 T-1509233079     : Büyük uygulamalara hazır
 T-1976149929     : Framework büyük uygulamalar için iyi bir mimariye sahiptir ve bir proje üzerinde birden fazla geliştirici çalışabilecek bir yapıdadır.
-T274100716       : Dostça lisanslama
+T274100716       : Kullanıcı dostu lisanslama
 T-1026548244     : Framework MIT lisansı ile lisanslanmıştır. Bu sayede ticari uygulamarda rahatlıkla kullanılabilir.
-T906139201       : node.js için Web uygulama framwork'ü
+T906139201       : node.js için Web Framework
 T808887091       : Total.js, <strong>node.js için web uygulama frameworküdür</strong> ve zengin web uygulamaları geliştirmek için özellikler içerir. Ayrıca tamamen ücretsizdir. Çekirdeğinde bulunan kendi web sunucusu ile statik ve dinamik dosyaları sunabilir. Akışlar, yüklemeler, resim boyutlandırma, otomatik içerik sıkıştırma ve daha fazlasını destekler. Framework hızlı ve esnektir.<br /><br /><b>Framework herhangi bir uygulamaya bağımlı değildir.</b>.
-T-1718871937     : Tüm client-side framewokrler ile tamamen uyumludur.
+T-1718871937     : Tüm client-side frameworkler ile tamamen uyumludur.
 T454814783       : FRAMEWORK ÖZELLİKLERİ
 T659075912       : E-commerce (MongoDB + GridFS)
 T1821969031      : Gerçek zamanlı yerelleştirme (WebSocket)
@@ -133,7 +133,7 @@ T1492462760      : İndir
 T523718601       : Topluluk
 T-1908600166     : Dökümantasyon
 T80992699        : Araçlar
-T-367434452      : 2012-2015. Lisans altındaki kod
+T-367434452      : 2012-2015. Kod Lisansı:
 T2002223209      : Örnekler
 T-2095292710     : Hatalar
 T-486654612      : Sürümler
